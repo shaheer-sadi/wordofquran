@@ -1,0 +1,957 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+         <base href="http://allahsquran.com/learn/">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <title>Learn Quran</title>
+            <style type="text/css" media="screen">
+                	@import url('index415.css');
+            </style>
+            <!--[if lte IE 6]>
+                    <link rel="stylesheet" href="inc/css/ie6fix.css" type="text/css" />
+            <![endif]-->
+            <!--[if IE 7]>
+                    <link rel="stylesheet" href="inc/css/ie7fix.css" type="text/css" />
+            <![endif]-->
+	   <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script>
+		// - pages links (numbers at top and bottom)
+ var tafsir_btn_clicked=false;
+function set_tafsir_pages_links() 
+
+{
+
+	$('.Paging a').click(function(){
+
+		stat.tafsir.page = $(this).attr('href').replace(/^.*#/, '');
+
+		refresh_screen();
+
+		return false;
+
+	});
+
+}
+
+
+
+// - scroll to section
+
+function scroll_to_section(section)
+
+{
+
+	$el = $('#sec_' + section).eq(0);
+
+	
+
+	if ($el.size() > 0) {
+
+		var p = $el.position().top; // - $('#sura').height();
+
+		///if (typeof console != 'undefined') console.log('section = ' + section + ' P = ' + p + ', X = ' + u2p(p, $('#tafsir').attr('max')));
+
+		var $slider = $("div[rel='text']").find('.space').eq(0);
+
+		$slider.slider('value', u2p(p, $('#text').attr('max')));
+
+	}
+
+}
+
+
+
+// - show tafsir
+
+function show_tafsir(html, section) {
+
+	$('#sura').removeClass('loading');
+
+	$("#sura #text").html(html);
+
+	$('<div class="clear"></div>').appendTo("#sura #text");
+
+	
+
+	set_tafsir_pages_links();
+
+	reset_slider('text', true);
+
+	scroll_to_section(section);
+
+	
+
+	var f1 = function () { reset_slider('text', false); };
+
+	setTimeout(f1, 1000);
+
+	
+
+	var f2 = function () { fix_slider_max('text') }
+
+	setTimeout(f2, 1000);
+
+	setTimeout(f2, 3000);
+
+	setTimeout(f2, 5000);
+
+	
+
+	if (playlist == null) player_new_sura();
+
+}
+
+
+
+// - find aya location
+
+function tafsir_aya_location(aya_no) {
+
+	var key = 'tafsir-pages-' + REVISION + '-' + stat.sura;
+
+	var pages_code = localStorage.getItem(key);
+
+	
+
+	if (pages_code == null) {
+
+		$.ajax({
+
+			async: false,
+
+			type: "get",
+
+			url: 'tafsir-pages-' + stat.sura + '.js',
+
+			success: function(response) {
+
+				localStorage.setItem(key, response);
+
+				pages_code = response;
+
+			}
+
+		});
+
+	}
+
+	
+
+	var z = new Array();
+
+	eval(pages_code);
+//	Added by Odai    
+    //    if(aya_no != 1)
+    //        stat.tafsir.page = z[aya_no][0];
+    if(tafsir_btn_clicked){
+        stat.tafsir.page = (aya_no != 1) ? z[aya_no][0] : 1;
+        tafsir_btn_clicked=false;
+    }
+    //    End by Odai
+    //    stat.tafsir.page = (aya_no != 1) ? z[aya_no][0] : 1;
+    //    Deleted by Odai
+
+	var section = (aya_no != 1) ? z[aya_no][1] : 0;
+
+	
+
+	return section;
+
+}
+
+
+
+// - load tafsir
+
+function load_tafsir(aya_no) {
+if(aya_no==1)
+{
+aya_no=0;
+}
+	// - display loading
+
+	$('#sura-body').hide();
+
+	$('#sura #text').html('').scrollTop(0);
+
+	$('#sura').addClass('loading');
+
+	
+
+	// - get aya page and section
+
+	var section = 0;
+
+	if (aya_no) section = tafsir_aya_location(aya_no);
+
+	
+
+	// - get data from localstorage
+
+	var id = status_to_hash('sp');
+
+	var key1 = 'tafsir-' + REVISION + '-' + id;
+
+	var tafsir = localStorage.getItem(key1);
+
+	
+
+	if (tafsir != null) { // - load data when they are not ready
+
+		show_tafsir(tafsir, section);
+
+	} else { // - get from php if they are not saved
+
+		$.ajax({
+
+			type: "get",
+
+			url: 'tafsir-' + id + '.html',
+
+			success: function(response) {
+
+				localStorage.setItem(key1, response);
+
+				show_tafsir(response, section);
+
+			}
+
+		});
+
+	}
+
+	
+
+	// - show sura information
+
+	var key2 = 'sura-' + REVISION + '-' + stat.sura;
+
+	sura_json = localStorage.getItem(key2);
+
+	
+
+	if (sura_json != null) { // - load data when they are not ready
+
+		display_sura_data();
+
+	} else { // - get from php if they are not saved
+
+		$.ajax({
+
+			type: "get",
+
+			url: 'sura' + stat.sura + '.js',
+
+			success: function(response) {
+
+				sura_json = response;
+
+				localStorage.setItem(key2, sura_json);
+
+				display_sura_data();
+
+			}
+
+	   });
+
+	}
+
+	
+
+	// - prepare aya selector
+
+	if (sura_data != null) if (sura_data.ayas_count != $('#ayas > ul > li').size()) prepare_aya_selector(sura_data.ayas_count, aya_no);
+
+}
+
+
+
+// - go to aya in tafsir mode
+
+function tafsir_goto_aya(aya_no) {
+
+	// - get current page
+
+	var key1 = status_to_hash('sp');	
+
+	
+
+	// - get aya page and section
+
+	var section = 0;
+
+	if (aya_no) section = tafsir_aya_location(aya_no);
+
+	
+
+	// - get new page
+
+	var key2 = status_to_hash('sp');
+
+	
+
+	///if (typeof console != 'undefined') console.log('TAFSIR ' + aya_no + ' ' + key1 + ' ' + key2 + ' ' + section);
+
+	
+
+	// - go to aya
+
+	if (key1 != key2) { // new page
+
+		load_tafsir(aya_no);
+
+	} else { // - current page
+
+		scroll_to_section(section)
+
+	}
+
+	
+
+	// - selector
+
+	$('#ayas li.active').removeClass('active');
+
+	$('#ayas a[href="#' + aya_no + '"]').parent().addClass('active');
+
+	$("#ayas span.value").text(aya_no);
+
+}
+			</script><style type="text/css"></style>
+            <script type="text/javascript"> var sura_no= 1;</script>
+<script type="text/javascript">
+            var site_version=415
+            var sura_no= 1;</script>
+	<script type="text/javascript" src="index415.js"></script><style type="text/css">input.styled { display: none; } select.styled { position: relative; width: 216px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }</style><style>@font-face{font-family:testfont;src:url(data:font/opentype;base64,T1RUTwALAIAAAwAwQ0ZGIMA92IQAAAVAAAAAyUZGVE1VeVesAAAGLAAAABxHREVGADAABAAABgwAAAAgT1MvMlBHT5sAAAEgAAAAYGNtYXAATQPNAAAD1AAAAUpoZWFk8QMKmwAAALwAAAA2aGhlYQS/BDgAAAD0AAAAJGhtdHgHKQAAAAAGSAAAAAxtYXhwAANQAAAAARgAAAAGbmFtZR8kCUMAAAGAAAACUnBvc3T/uAAyAAAFIAAAACAAAQAAAAEAQVTDUm9fDzz1AAsD6AAAAADHUuOGAAAAAMdS44YAAADzAz8BdgAAAAgAAgAAAAAAAAABAAABdgDzAAkDQQAAAAADPwABAAAAAAAAAAAAAAAAAAAAAwAAUAAAAwAAAAICmgGQAAUAAAK8AooAAACMArwCigAAAd0AMgD6AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEZIRAAAQAAgAC0C7v8GAAABdv8NAAAAAQAAAAAAAAAAACAAIAABAAAAFAD2AAEAAAAAAAAAPAB6AAEAAAAAAAEAAgC9AAEAAAAAAAIABwDQAAEAAAAAAAMAEQD8AAEAAAAAAAQAAwEWAAEAAAAAAAUABQEmAAEAAAAAAAYAAgEyAAEAAAAAAA0AAQE5AAEAAAAAABAAAgFBAAEAAAAAABEABwFUAAMAAQQJAAAAeAAAAAMAAQQJAAEABAC3AAMAAQQJAAIADgDAAAMAAQQJAAMAIgDYAAMAAQQJAAQABgEOAAMAAQQJAAUACgEaAAMAAQQJAAYABAEsAAMAAQQJAA0AAgE1AAMAAQQJABAABAE7AAMAAQQJABEADgFEAEcAZQBuAGUAcgBhAHQAZQBkACAAaQBuACAAMgAwADAAOQAgAGIAeQAgAEYAbwBuAHQATABhAGIAIABTAHQAdQBkAGkAbwAuACAAQwBvAHAAeQByAGkAZwBoAHQAIABpAG4AZgBvACAAcABlAG4AZABpAG4AZwAuAABHZW5lcmF0ZWQgaW4gMjAwOSBieSBGb250TGFiIFN0dWRpby4gQ29weXJpZ2h0IGluZm8gcGVuZGluZy4AAFAASQAAUEkAAFIAZQBnAHUAbABhAHIAAFJlZ3VsYXIAAEYATwBOAFQATABBAEIAOgBPAFQARgBFAFgAUABPAFIAVAAARk9OVExBQjpPVEZFWFBPUlQAAFAASQAgAABQSSAAADEALgAwADAAMAAAMS4wMDAAAFAASQAAUEkAACAAACAAAFAASQAAUEkAAFIAZQBnAHUAbABhAHIAAFJlZ3VsYXIAAAAAAAADAAAAAwAAABwAAQAAAAAARAADAAEAAAAcAAQAKAAAAAYABAABAAIAIAAt//8AAAAgAC3////h/9UAAQAAAAAAAAAAAQYAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAA/7UAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEBAABAQEDUEkAAQIAAQAu+BAA+BsB+BwC+B0D+BgEWQwDi/eH+dP4CgUcAIwPHAAAEBwAkREcAB4cAKsSAAMCAAEAPQA/AEFHZW5lcmF0ZWQgaW4gMjAwOSBieSBGb250TGFiIFN0dWRpby4gQ29weXJpZ2h0IGluZm8gcGVuZGluZy5QSVBJAAAAAAEADgADAQECAxQODvb3h/cXAfeHBPnT9xf90wYO+IgU+WoVHgoDliX/DAmLDAr3Fwr3FwwMHgoG/wwSAAAAAAEAAAAOAAAAGAAAAAAAAgABAAEAAgABAAQAAAACAAAAAAABAAAAAMbULpkAAAAAx1KUiQAAAADHUpSJAfQAAAH0AAADQQAA)}</style>
+            <script type="text/javascript">
+
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-887410-7']);
+                _gaq.push(['_trackPageview']);
+
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+
+            </script>
+
+
+  <script type="text/javascript">
+	function ReposMaskDialog(id){
+		var demodiv =  document.getElementById(id);
+		var PosT = (($(window).height() - demodiv.offsetHeight)/2) + $(document).scrollTop();
+		if(PosT < 25) { PosT = 25; } ;
+	    demodiv.style.top = PosT +'px';
+	    demodiv.style.left = ((($(window).width()-demodiv.offsetWidth)/2) + $(document).scrollLeft())+'px';		
+	}
+/*
+	function showPopup( )
+	{
+		$("body").prepend("<div id='xdivmasking' style='position: absolute; top: 0; left: 0; z-index: 46; background: #000; opacity: 0.50; filter: alpha(opacity=50)'></div>");
+		$("#xdivmasking").click(function(){
+			$("#xdivmasking,#bnrMask").remove();
+		}).height($(document).height()).width($(document).width()).after("<div id='bnrMask' style='position: absolute; z-index:100;'><a href='http://recitethequran.com' target='_parent'><img src='popup.jpg' width='722' height='449' border='0' alt='' title='' /></div>");
+		ReposMaskDialog("bnrMask");
+	}
+	
+*/
+  
+  </script>
+
+    </head><fontface><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 99px; line-height: normal; font-family: testfont, _, serif; position: absolute; visibility: hidden;" id="fonttest">-------</span></fontface>
+    <body>
+        <!--noscript><pre class="error">
+        <span>Learn Quran</span>
+        -------------------------
+        <b>JavaScript must be enabled in order for you to use Learn Quran Website.</b>
+        However, it seems JavaScript is either disabled or not supported by your browser.
+        To use this site, enable JavaScript by changing your browser options, then <a href="/">try again</a>.
+        <pre></noscript-->
+        <div id="page" style="display: block;">
+			<div class="container">
+				<!-- <div align="center"><a target="_blank" href="http://www.recitethequran.com"><img  src="banner_wide.jpg" /></a></div>  -->
+                <div id="header">
+                    <div class="left">
+                        <!--div id="title">Learn Quran</div-->
+                        <div id="options">
+                            <a class="button popup_btn " id="playback_btn" href="#playback_popup"><span class="l"></span><span class="t">Playback</span><span class="r"></span></a>
+                            <a class="button popup_btn" id="display_btn" href="#display_popup"><span class="l"></span><span class="t">Display</span><span class="r"></span></a>
+                        </div>
+                    </div> <!-- head/left -->
+                    <div class="right">
+                        <div id="members">
+                            <a id="about_btn" class="popup_btn" href="#about_popup">About</a> -
+                            <a id="contact_btn" class="popup_btn" href="#contact_popup">Contact</a>
+                        </div>
+                        <div id="options2">
+                            <ul id="displaymode">
+                                <li><a href="#" id="a" rel="fp" class="active" title="Arabic">Arabic</a></li>
+                                <li><a href="#" id="e" rel="fp" class="active" title="Translations">Translations</a></li>
+                                <li><a href="#" id="w" rel="fp" class="active" title="Word for Word">Word for Word</a></li>
+                                <li><a href="#" id="t" rel="fp" title="Tajweed">Tajweed</a></li>
+                            </ul>
+                            <form id="search" method="post" action="#">
+                                <input type="text" id="keyword" value="Search">
+                                <a href="#" id="submit" class="notready">Submit</a>
+                            </form>
+                        </div>
+                    </div> <!-- head/right -->
+                    <div class="alert" id="pdms-alert" style="display: block;"><div class="l"></div><div class="c"><div class="s"></div><div class="t">Alert:</div><div class="m">This site is best viewed with PDMS font, which is currently not installed on this machine. &nbsp;<a href="#" id="install-link">Install</a> &nbsp; <a href="#" id="hide">Hide</a></div></div><div class="r"></div></div> 
+                    <div class="alert" id="ff9-alert" style="display: none;"><div class="l"></div><div class="c"><div class="s"></div><div class="t">Alert:</div><div class="m">Your font is Scheherazade now, becuase Firefox 9 has some problems with other Arabic fonts.</div></div><div class="r"></div></div> 
+                </div> <!-- head -->
+                <div id="main" style="height: 313px;">
+                    <div id="browse">
+                        <div class="left">
+                            <div class="corner"></div>
+                            <h2>Browse</h2>
+                            <div id="nav" style="height: 262px;">
+                                <ul id="menu" max="5582" step="268.7208885704049">
+                                    <li><a href="#" class="list"><span>Chapter</span></a>
+                                        <ol class="items" id="suras">
+                                            <li><a href="#1" class="">1. Al-Fatihah (7)<acronym>The Opening</acronym></a></li><li><a href="#2">2. Al-Baqarah (286)<acronym>The Cow</acronym></a></li><li><a href="#3">3. Ali-Imran (200)<acronym>The Family Of Imran</acronym></a></li><li><a href="#4">4. An-Nisa' (176)<acronym>The Women</acronym></a></li><li><a href="#5">5. Al-Ma'idah (120)<acronym>The Table Spread</acronym></a></li><li><a href="#6">6. Al-An'am (165)<acronym>The Cattle</acronym></a></li><li><a href="#7">7. Al-A'raf (206)<acronym>The Heights</acronym></a></li><li><a href="#8">8. Al-Anfal (75)<acronym>The Spoils Of War</acronym></a></li><li><a href="#9">9. At-Tawbah (129)<acronym>The Repentance</acronym></a></li><li><a href="#10">10. Yunus (109)<acronym>Jonah</acronym></a></li><li><a href="#11">11. Hud (123)<acronym>The Tribe Of Hood</acronym></a></li><li><a href="#12">12. Yusuf (111)<acronym>Joseph</acronym></a></li><li><a href="#13">13. Ar-Ra'd (43)<acronym>The Thunder</acronym></a></li><li><a href="#14">14. Ibrahim (52)<acronym>Abraham</acronym></a></li><li><a href="#15">15. Al-Hijr (99)<acronym>The Rock City</acronym></a></li><li><a href="#16">16. An-Nahl (128)<acronym>The Bees</acronym></a></li><li><a href="#17">17. Al-Isra' (111)<acronym>The Night Journey</acronym></a></li><li><a href="#18">18. Al-Kahf (110)<acronym>The Cave</acronym></a></li><li><a href="#19">19. Maryam (98)<acronym>Mary</acronym></a></li><li><a href="#20">20. Ta-Ha (135)<acronym>Ta-Ha</acronym></a></li><li><a href="#21">21. Al-Anbiya' (112)<acronym>The Prophets</acronym></a></li><li><a href="#22">22. Al-Hajj (78)<acronym>The Pilgrimage</acronym></a></li><li><a href="#23">23. Al-Mu'minun (118)<acronym>The Believers</acronym></a></li><li><a href="#24">24. An-Nur (64)<acronym>The Light</acronym></a></li><li><a href="#25">25. Al-Furqan (77)<acronym>The Criterion</acronym></a></li><li><a href="#26">26. Ash-Shu'ara' (227)<acronym>The Poets</acronym></a></li><li><a href="#27">27. An-Naml (93)<acronym>The Ants</acronym></a></li><li><a href="#28">28. Al-Qasas (88)<acronym>The Stories</acronym></a></li><li><a href="#29">29. Al-Ankabut (69)<acronym>The Spider</acronym></a></li><li><a href="#30">30. Ar-Rum (60)<acronym>The Romans</acronym></a></li><li><a href="#31">31. Luqman (34)<acronym>Luqman</acronym></a></li><li><a href="#32">32. As-Sajdah (30)<acronym>The Prostration</acronym></a></li><li><a href="#33">33. Al-Ahzab (73)<acronym>The Combined Forces</acronym></a></li><li><a href="#34">34. Saba' (54)<acronym>Sheba</acronym></a></li><li><a href="#35">35. Fatir (45)<acronym>The Originator</acronym></a></li><li><a href="#36">36. Ya-Sin (83)<acronym>Ya-Sin</acronym></a></li><li><a href="#37">37. As-Saffat (182)<acronym>The Arrangers</acronym></a></li><li><a href="#38">38. Sad (88)<acronym>The Letter Sad</acronym></a></li><li><a href="#39">39. Az-Zumar (75)<acronym>The Groups</acronym></a></li><li><a href="#40">40. Ghafir (85)<acronym>The Forgiver God</acronym></a></li><li><a href="#41">41. Fussilat (54)<acronym>Explained In Detail</acronym></a></li><li><a href="#42">42. Ash-Shura (53)<acronym>Consultation</acronym></a></li><li><a href="#43">43. Az-Zukhruf (89)<acronym>Ornaments Of Gold</acronym></a></li><li><a href="#44">44. Ad-Dukhan (59)<acronym>The Smoke</acronym></a></li><li><a href="#45">45. Al-Jathiyah (37)<acronym>Kneeling</acronym></a></li><li><a href="#46">46. Al-Ahqaf (35)<acronym>The Dunes</acronym></a></li><li><a href="#47">47. Muhammad (38)<acronym>Muhammad</acronym></a></li><li><a href="#48">48. Al-Fath (29)<acronym>The Victory</acronym></a></li><li><a href="#49">49. Al-Hujurat (18)<acronym>The Dwellings</acronym></a></li><li><a href="#50">50. Qaf (45)<acronym>The Letter Qaf</acronym></a></li><li><a href="#51">51. Adh-Dhariyat (60)<acronym>The Scattering Winds</acronym></a></li><li><a href="#52">52. At-Tur (49)<acronym>Mount Sinai</acronym></a></li><li><a href="#53">53. An-Najm (62)<acronym>The Star</acronym></a></li><li><a href="#54">54. Al-Qamar (55)<acronym>The Moon</acronym></a></li><li><a href="#55">55. Ar-Rahman (78)<acronym>The Most Gracious</acronym></a></li><li><a href="#56">56. Al-Waqi'ah (96)<acronym>The Inevitable</acronym></a></li><li><a href="#57">57. Al-Hadid (29)<acronym>The Iron</acronym></a></li><li><a href="#58">58. Al-Mujadilah (22)<acronym>She That Disputed</acronym></a></li><li><a href="#59">59. Al-Hashr (24)<acronym>The Gathering</acronym></a></li><li><a href="#60" class="">60. Al-Mumtahanah (13)<acronym>The Woman To Be Examined</acronym></a></li><li><a href="#61" class="">61. As-Saff (14)<acronym>The Row</acronym></a></li><li><a href="#62" class="">62. Al-Jumu'ah (11)<acronym>Friday</acronym></a></li><li><a href="#63" class="">63. Al-Munafiqun (11)<acronym>The Hypocrites</acronym></a></li><li><a href="#64" class="">64. At-Taghabun (18)<acronym>Mutual Blaming</acronym></a></li><li><a href="#65" class="">65. At-Talaq (12)<acronym>The Divorce</acronym></a></li><li><a href="#66" class="active">66. At-Tahrim (12)<acronym>The Prohibition</acronym></a></li><li><a href="#67">67. Al-Mulk (30)<acronym>Dominion</acronym></a></li><li><a href="#68">68. Al-Qalam (52)<acronym>The Pen</acronym></a></li><li><a href="#69">69. Al-Haqqah (52)<acronym>Incontestable</acronym></a></li><li><a href="#70">70. Al-Ma'arij (44)<acronym>The Heights</acronym></a></li><li><a href="#71">71. Nuh (28)<acronym>Noah</acronym></a></li><li><a href="#72">72. Al-Jin (28)<acronym>The Jinn</acronym></a></li><li><a href="#73">73. Al-Muzzammil (20)<acronym>The One Wrapped in Garments</acronym></a></li><li><a href="#74">74. Al-Muddaththir (56)<acronym>The Cloaked One</acronym></a></li><li><a href="#75">75. Al-Qiyamah (40)<acronym>The Resurrection</acronym></a></li><li><a href="#76">76. Al-Insan (31)<acronym>The Human</acronym></a></li><li><a href="#77">77. Al-Mursalat (50)<acronym>Those Sent Forth</acronym></a></li><li><a href="#78">78. An-Naba' (40)<acronym>The Great News</acronym></a></li><li><a href="#79">79. An-Nazi'at (46)<acronym>The Snatchers</acronym></a></li><li><a href="#80">80. Abasa (42)<acronym>He Frowned</acronym></a></li><li><a href="#81">81. At-Takwir (29)<acronym>The Rolling</acronym></a></li><li><a href="#82">82. Al-Infitar (19)<acronym>The Shattering</acronym></a></li><li><a href="#83">83. Al-Mutaffifin (36)<acronym>The Cheaters</acronym></a></li><li><a href="#84">84. Al-Inshiqaq (25)<acronym>The Rupture</acronym></a></li><li><a href="#85">85. Al-Buruj (22)<acronym>The Galaxies</acronym></a></li><li><a href="#86">86. At-Tariq (17)<acronym>The Bright Star</acronym></a></li><li><a href="#87">87. Al-A'la (19)<acronym>The Most High</acronym></a></li><li><a href="#88">88. Al-Ghashiyah (26)<acronym>The Overwhelming</acronym></a></li><li><a href="#89">89. Al-Fajr (30)<acronym>The Dawn</acronym></a></li><li><a href="#90">90. Al-Balad (20)<acronym>The Town</acronym></a></li><li><a href="#91">91. Ash-Shams (15)<acronym>The Sun</acronym></a></li><li><a href="#92">92. Al-Layl (21)<acronym>The Night</acronym></a></li><li><a href="#93">93. Ad-Duha (11)<acronym>The Forenoon</acronym></a></li><li><a href="#94">94. Ash-Sharh (8)<acronym>Cooling the Temper</acronym></a></li><li><a href="#95">95. At-Tin (8)<acronym>The Fig</acronym></a></li><li><a href="#96">96. Al-Alaq (19)<acronym>The Clining Clot</acronym></a></li><li><a href="#97">97. Al-Qadr (5)<acronym>The Night of Decree</acronym></a></li><li><a href="#98">98. Al-Bayyinah (8)<acronym>The Clear Proof</acronym></a></li><li><a href="#99">99. Az-Zalzalah (8)<acronym>The Earthquake</acronym></a></li><li><a href="#100">100. Al-Adiyat (11)<acronym>The Gallopers</acronym></a></li><li><a href="#101">101. Al-Qari'ah (11)<acronym>The Striking Hour</acronym></a></li><li><a href="#102">102. At-Takathur (8)<acronym>The Piling Up</acronym></a></li><li><a href="#103">103. Al-Asr (3)<acronym>The Time</acronym></a></li><li><a href="#104">104. Al-Humazah (9)<acronym>The Slanderer</acronym></a></li><li><a href="#105">105. Al-Fil (5)<acronym>The Elephant</acronym></a></li><li><a href="#106">106. Quraysh (4)<acronym>Quraysh Tribe</acronym></a></li><li><a href="#107">107. Al-Ma'un (7)<acronym>Charity</acronym></a></li><li><a href="#108">108. Al-Kawthar (3)<acronym>A River in Paradise</acronym></a></li><li><a href="#109">109. Al-Kafirun (6)<acronym>The Disbelievers</acronym></a></li><li><a href="#110">110. An-Nasr (3)<acronym>The Help</acronym></a></li><li><a href="#111">111. Al-Masad (5)<acronym>Thorns</acronym></a></li><li><a href="#112">112. Al-Ikhlas (4)<acronym>Sincerity</acronym></a></li><li><a href="#113">113. Al-Falaq (5)<acronym>The Daybreak</acronym></a></li><li><a href="#114">114. An-Nas (6)<acronym>Mankind</acronym></a></li>                                        </ol>
+                                    </li>
+                                </ul>
+                            </div> <!-- nav -->
+                        </div>
+                        <div class="slider" rel="menu" id="slc" style="height: 313px;">
+                            <a class="top"></a>
+                            <a class="up"></a>
+                            <div class="space ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all" rel="menu" style="height: 237px;"><div class="ui-slider-range ui-slider-range-min ui-widget-header" style="height: 42.78%;"></div><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="bottom: 42.78%;"></a></div>
+                            <a class="down"></a>
+                            <a class="bottom"></a>
+                        </div>
+                    </div> <!-- browse -->
+                    <div id="content">
+                        <div class="left">
+                            <div id="heading">
+                                <h1>At-Tahrim</h1>
+                                <h2>The Prohibition</h2>
+                                <div id="options3">
+                                    <div class="number-selector" id="ayas">
+                                        <span class="value">1</span>
+                                        <ul><li class="active"><a href="#1" onclick="return sa(1);" rel="fp">1</a></li><li><a href="#2" onclick="return sa(2);" rel="fp">2</a></li><li><a href="#3" onclick="return sa(3);" rel="fp">3</a></li><li><a href="#4" onclick="return sa(4);" rel="fp">4</a></li><li><a href="#5" onclick="return sa(5);" rel="fp">5</a></li><li><a href="#6" onclick="return sa(6);" rel="fp">6</a></li><li><a href="#7" onclick="return sa(7);" rel="fp">7</a></li><li><a href="#8" onclick="return sa(8);" rel="fp">8</a></li><li><a href="#9" onclick="return sa(9);" rel="fp">9</a></li><li><a href="#10" onclick="return sa(10);" rel="fp">10</a></li><li><a href="#11" onclick="return sa(11);" rel="fp">11</a></li><li><a href="#12" onclick="return sa(12);" rel="fp">12</a></li></ul>
+                                    </div>
+                                    <div>
+                                        <a class="button" id="tafsir_btn" href="#" rel="fp"><span class="l"></span><span class="t">Tafsir</span><span class="r"></span></a>
+                                    </div> 
+                                    <div>
+                                        <a id="quranplayer" href="#">Play</a>
+                                    </div>
+                                    <!--div id="aya_player"></div-->
+                                </div>
+                            </div>
+                            <div class="CloseBtn" id="tafsir_close_btn" style="display: none;"><a title="Close" href="#" rel="fp">Close</a></div>
+                            <div id="sura" class="" style="height: 227px;">
+                                <div id="text" max="5374" step="279.1216970599181"><div id="sura-body" class="AEW arial"><div id="aya-1-top"></div><div class="aya-A"><span class="link active" rel="aya-1" lang="ar" onclick="sa(1);" ondblclick="pa(this);">يَـٰٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَۖ تَبْتَغِى مَرْضَاتَ أَزْوَٲجِكَۚ وَٱللَّهُ غَفُورٌ رَّحِيمٌ</span> <span class="aya_num">﴿<strong>١</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="138" align="right"><div style="width:125px" onclick="pl(7360)"><span class="a">يَـٰٓأَيُّهَا ٱلنَّبِىُّ</span><span class="e">O Prophet!</span></div></td><td class="ww" width="109" align="center"><div style="width:82px" onclick="pl(2974)"><span class="a">لِمَ</span><span class="e">Why (do)</span></div></td><td class="ww" width="125" align="center"><div style="width:98px" onclick="pl(17045)"><span class="a">تُحَرِّمُ</span><span class="e">you prohibit</span></div></td><td class="ww" width="80" align="center"><div style="width:53px" onclick="pl(262)"><span class="a">مَآ</span><span class="e">what</span></div></td><td class="ww" width="189" align="center"><div style="width:162px" onclick="pl(5196)"><span class="a">أَحَلَّ ٱللَّهُ</span><span class="e">Allah has made lawful</span></div></td><td class="ww" width="85" align="left"><div style="width:72px" onclick="pl(323)"><span class="a">لَكَۖ</span><span class="e">for you,</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="83" align="right"><div style="width:76px" onclick="pl(17046)"><span class="a">تَبْتَغِى</span><span class="e">seeking</span></div></td><td class="ww" width="120" align="center"><div style="width:106px" onclick="pl(17047)"><span class="a">مَرْضَاتَ</span><span class="e">(to) please</span></div></td><td class="ww" width="114" align="center"><div style="width:100px" onclick="pl(17048)"><span class="a">أَزْوَٲجِكَۚ</span><span class="e">your wives?</span></div></td><td class="ww" width="95" align="center"><div style="width:81px" onclick="pl(167)"><span class="a">وَٱللَّهُ</span><span class="e">And Allah</span></div></td><td class="ww" width="153" align="center"><div style="width:139px" onclick="pl(1499)"><span class="a">غَفُورٌ</span><span class="e">(is) Oft-Forgiving,</span></div></td><td class="ww" width="105" align="center"><div style="width:113px" onclick="pl(1294)"><span class="a">رَّحِيمٌ</span><span class="e">Most Merciful.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>١</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-1" lang="en" onclick="sa(1, 'en');" ondblclick="pa(this);">O Prophet, why do you prohibit [yourself from] what Allah has made lawful for you, seeking the approval of your wives? And Allah is Forgiving and Merciful.</span></div><div class="sep-aya"></div><div id="aya-2-top"></div><div class="aya-A"><span class="link" rel="aya-2" lang="ar" onclick="sa(2);" ondblclick="pa(this);">قَدْ فَرَضَ ٱللَّهُ لَكُمْ تَحِلَّةَ أَيْمَـٰنِكُمْۚ وَٱللَّهُ مَوْلَـٰكُمْۖ وَهُوَ ٱلْعَلِيمُ ٱلْحَكِيمُ</span> <span class="aya_num">﴿<strong>٢</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="81" align="right"><div style="width:70px" onclick="pl(1097)"><span class="a">قَدْ</span><span class="e">Indeed,</span></div></td><td class="ww" width="163" align="center"><div style="width:140px" onclick="pl(14067)"><span class="a">فَرَضَ ٱللَّهُ</span><span class="e">Allah has ordained</span></div></td><td class="ww" width="90" align="center"><div style="width:67px" onclick="pl(207)"><span class="a">لَكُمْ</span><span class="e">for you</span></div></td><td class="ww" width="151" align="center"><div style="width:128px" onclick="pl(17049)"><span class="a">تَحِلَّةَ</span><span class="e">(the) dissolution</span></div></td><td class="ww" width="149" align="center"><div style="width:126px" onclick="pl(1972)"><span class="a">أَيْمَـٰنِكُمْۚ</span><span class="e">(of) your oaths.</span></div></td><td class="ww" width="92" align="left"><div style="width:81px" onclick="pl(167)"><span class="a">وَٱللَّهُ</span><span class="e">And Allah</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="180" align="right"><div style="width:143px" onclick="pl(3362)"><span class="a">مَوْلَـٰكُمْۖ</span><span class="e">(is) your Protector</span></div></td><td class="ww" width="140" align="center"><div style="width:66px" onclick="pl(305)"><span class="a">وَهُوَ</span><span class="e">and He</span></div></td><td class="ww" width="223" align="center"><div style="width:149px" onclick="pl(342)"><span class="a">ٱلْعَلِيمُ</span><span class="e">(is) the All-Knower,</span></div></td><td class="ww" width="127" align="center"><div style="width:105px" onclick="pl(343)"><span class="a">ٱلْحَكِيمُ</span><span class="e">the All-Wise.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٢</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-2" lang="en" onclick="sa(2, 'en');" ondblclick="pa(this);">Allah has already ordained for you [Muslims] the dissolution of your oaths. And Allah is your protector, and He is the Knowing, the Wise.</span></div><div class="sep-aya"></div><div id="aya-3-top"></div><div class="aya-A"><span class="link" rel="aya-3" lang="ar" onclick="sa(3);" ondblclick="pa(this);">وَإِذْ أَسَرَّ ٱلنَّبِىُّ إِلَىٰ بَعْضِ أَزْوَٲجِهِۦ حَدِيثًا فَلَمَّا نَبَّأَتْ بِهِۦ وَأَظْهَرَهُ ٱللَّهُ عَلَيْهِ عَرَّفَ بَعْضَهُۥ وَأَعْرَضَ عَنۢ بَعْضٍۖ فَلَمَّا نَبَّأَهَا بِهِۦ قَالَتْ مَنْ أَنۢبَأَكَ هَـٰذَاۖ قَالَ نَبَّأَنِىَ ٱلْعَلِيمُ ٱلْخَبِيرُ</span> <span class="aya_num">﴿<strong>٣</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="95" align="right"><div style="width:85px" onclick="pl(308)"><span class="a">وَإِذْ</span><span class="e">And when</span></div></td><td class="ww" width="96" align="center"><div style="width:76px" onclick="pl(9358)"><span class="a">أَسَرَّ</span><span class="e">confided</span></div></td><td class="ww" width="118" align="center"><div style="width:98px" onclick="pl(2990)"><span class="a">ٱلنَّبِىُّ</span><span class="e">the Prophet</span></div></td><td class="ww" width="73" align="center"><div style="width:53px" onclick="pl(118)"><span class="a">إِلَىٰ</span><span class="e">to</span></div></td><td class="ww" width="96" align="center"><div style="width:76px" onclick="pl(5029)"><span class="a">بَعْضِ</span><span class="e">one</span></div></td><td class="ww" width="130" align="center"><div style="width:110px" onclick="pl(17050)"><span class="a">أَزْوَٲجِهِۦ</span><span class="e">(of) his wives</span></div></td><td class="ww" width="116" align="left"><div style="width:106px" onclick="pl(4014)"><span class="a">حَدِيثًا</span><span class="e">a statement,</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="92" align="right"><div style="width:84px" onclick="pl(141)"><span class="a">فَلَمَّا</span><span class="e">and when</span></div></td><td class="ww" width="120" align="center"><div style="width:104px" onclick="pl(17051)"><span class="a">نَبَّأَتْ</span><span class="e">she informed</span></div></td><td class="ww" width="88" align="center"><div style="width:72px" onclick="pl(204)"><span class="a">بِهِۦ</span><span class="e">about it</span></div></td><td class="ww" width="214" align="center"><div style="width:198px" onclick="pl(17052)"><span class="a">وَأَظْهَرَهُ ٱللَّهُ</span><span class="e">and Allah made it apparent</span></div></td><td class="ww" width="82" align="center"><div style="width:66px" onclick="pl(395)"><span class="a">عَلَيْهِ</span><span class="e">to him,</span></div></td><td class="ww" width="131" align="left"><div style="width:123px" onclick="pl(17053)"><span class="a">عَرَّفَ</span><span class="e">he made known</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="103" align="right"><div style="width:95px" onclick="pl(7255)"><span class="a">بَعْضَهُۥ</span><span class="e">a part of it</span></div></td><td class="ww" width="125" align="center"><div style="width:109px" onclick="pl(17054)"><span class="a">وَأَعْرَضَ</span><span class="e">and avoided</span></div></td><td class="ww" width="70" align="center"><div style="width:54px" onclick="pl(1105)"><span class="a">عَنۢ</span><span class="e">[of]</span></div></td><td class="ww" width="92" align="center"><div style="width:76px" onclick="pl(1316)"><span class="a">بَعْضٍۖ</span><span class="e">a part.</span></div></td><td class="ww" width="109" align="center"><div style="width:93px" onclick="pl(141)"><span class="a">فَلَمَّا</span><span class="e">Then when</span></div></td><td class="ww" width="139" align="center"><div style="width:123px" onclick="pl(17055)"><span class="a">نَبَّأَهَا</span><span class="e">he informed her</span></div></td><td class="ww" width="85" align="left"><div style="width:77px" onclick="pl(204)"><span class="a">بِهِۦ</span><span class="e">about it,</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="87" align="right"><div style="width:79px" onclick="pl(2789)"><span class="a">قَالَتْ</span><span class="e">she said,</span></div></td><td class="ww" width="73" align="center"><div style="width:57px" onclick="pl(76)"><span class="a">مَنْ</span><span class="e">`Who</span></div></td><td class="ww" width="121" align="center"><div style="width:105px" onclick="pl(17056)"><span class="a">أَنۢبَأَكَ</span><span class="e">informed you</span></div></td><td class="ww" width="75" align="center"><div style="width:59px" onclick="pl(248)"><span class="a">هَـٰذَاۖ</span><span class="e">this?`</span></div></td><td class="ww" width="89" align="center"><div style="width:73px" onclick="pl(309)"><span class="a">قَالَ</span><span class="e">He said,</span></div></td><td class="ww" width="153" align="center"><div style="width:137px" onclick="pl(17057)"><span class="a">نَبَّأَنِىَ</span><span class="e">`Has informed me</span></div></td><td class="ww" width="125" align="left"><div style="width:117px" onclick="pl(342)"><span class="a">ٱلْعَلِيمُ</span><span class="e">the All-Knower</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="108" align="right"><div style="width:123px" onclick="pl(5471)"><span class="a">ٱلْخَبِيرُ</span><span class="e">the All-Aware.`</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٣</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-3" lang="en" onclick="sa(3, 'en');" ondblclick="pa(this);">And [remember] when the Prophet confided to one of his wives a statement; and when she informed [another] of it and Allah showed it to him, he made known part of it and ignored a part. And when he informed her about it, she said, "Who told you this?" He said, "I was informed by the Knowing, the Acquainted."</span></div><div class="sep-aya"></div><div id="aya-4-top"></div><div class="aya-A"><span class="link" rel="aya-4" lang="ar" onclick="sa(4);" ondblclick="pa(this);">إِن تَتُوبَآ إِلَى ٱللَّهِ فَقَدْ صَغَتْ قُلُوبُكُمَاۖ وَإِن تَظَـٰهَرَا عَلَيْهِ فَإِنَّ ٱللَّهَ هُوَ مَوْلَـٰهُ وَجِبْرِيلُ وَصَـٰلِحُ ٱلْمُؤْمِنِينَۖ وَٱلْمَلَـٰٓئِكَةُ بَعْدَ ذَٲلِكَ ظَهِيرٌ</span> <span class="aya_num">﴿<strong>٤</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="52" align="right"><div style="width:44px" onclick="pl(225)"><span class="a">إِن</span><span class="e">If</span></div></td><td class="ww" width="126" align="center"><div style="width:111px" onclick="pl(17058)"><span class="a">تَتُوبَآ</span><span class="e">you both turn</span></div></td><td class="ww" width="68" align="center"><div style="width:53px" onclick="pl(118)"><span class="a">إِلَى</span><span class="e">to</span></div></td><td class="ww" width="71" align="center"><div style="width:56px" onclick="pl(606)"><span class="a">ٱللَّهِ</span><span class="e">Allah,</span></div></td><td class="ww" width="103" align="center"><div style="width:88px" onclick="pl(1016)"><span class="a">فَقَدْ</span><span class="e">so indeed,</span></div></td><td class="ww" width="122" align="center"><div style="width:107px" onclick="pl(17059)"><span class="a">صَغَتْ</span><span class="e">(are) inclined</span></div></td><td class="ww" width="117" align="center"><div style="width:102px" onclick="pl(17060)"><span class="a">قُلُوبُكُمَاۖ</span><span class="e">your hearts;</span></div></td><td class="ww" width="66" align="left"><div style="width:58px" onclick="pl(213)"><span class="a">وَإِن</span><span class="e">but if</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="184" align="right"><div style="width:173px" onclick="pl(13474)"><span class="a">تَظَـٰهَرَا</span><span class="e">you backup each other</span></div></td><td class="ww" width="122" align="center"><div style="width:100px" onclick="pl(395)"><span class="a">عَلَيْهِ</span><span class="e">against him,</span></div></td><td class="ww" width="125" align="center"><div style="width:103px" onclick="pl(599)"><span class="a">فَإِنَّ</span><span class="e">then indeed,</span></div></td><td class="ww" width="78" align="center"><div style="width:56px" onclick="pl(184)"><span class="a">ٱللَّهَ</span><span class="e">Allah,</span></div></td><td class="ww" width="70" align="center"><div style="width:48px" onclick="pl(298)"><span class="a">هُوَ</span><span class="e">He</span></div></td><td class="ww" width="148" align="left"><div style="width:137px" onclick="pl(10066)"><span class="a">مَوْلَـٰهُ</span><span class="e">(is) his Protector,</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="112" align="right"><div style="width:99px" onclick="pl(17061)"><span class="a">وَجِبْرِيلُ</span><span class="e">and Jibreel,</span></div></td><td class="ww" width="175" align="center"><div style="width:149px" onclick="pl(17062)"><span class="a">وَصَـٰلِحُ</span><span class="e">and (the) righteous</span></div></td><td class="ww" width="133" align="center"><div style="width:107px" onclick="pl(1964)"><span class="a">ٱلْمُؤْمِنِينَۖ</span><span class="e">believers,</span></div></td><td class="ww" width="150" align="center"><div style="width:124px" onclick="pl(1834)"><span class="a">وَٱلْمَلَـٰٓئِكَةُ</span><span class="e">and the Angels,</span></div></td><td class="ww" width="78" align="center"><div style="width:52px" onclick="pl(1117)"><span class="a">بَعْدَ</span><span class="e">after</span></div></td><td class="ww" width="77" align="left"><div style="width:64px" onclick="pl(28)"><span class="a">ذَٲلِكَ</span><span class="e">that</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="138" align="right"><div style="width:153px" onclick="pl(17063)"><span class="a">ظَهِيرٌ</span><span class="e">(are his) assistants.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٤</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-4" lang="en" onclick="sa(4, 'en');" ondblclick="pa(this);">If you two [wives] repent to Allah, [it is best], for your hearts have deviated. But if you cooperate against him – then indeed Allah is his protector, and Gabriel and the righteous of the believers and the angels, moreover, are [his] assistants.</span></div><div class="sep-aya"></div><div id="aya-5-top"></div><div class="aya-A"><span class="link" rel="aya-5" lang="ar" onclick="sa(5);" ondblclick="pa(this);">عَسَىٰ رَبُّهُۥٓ إِن طَلَّقَكُنَّ أَن يُبْدِلَهُۥٓ أَزْوَٲجًا خَيْرًا مِّنكُنَّ مُسْلِمَـٰتٍ مُّؤْمِنَـٰتٍ قَـٰنِتَـٰتٍ تَـٰٓئِبَـٰتٍ عَـٰبِدَٲتٍ سَـٰٓئِحَـٰتٍ ثَيِّبَـٰتٍ وَأَبْكَارًا</span> <span class="aya_num">﴿<strong>٥</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="89" align="right"><div style="width:73px" onclick="pl(4255)"><span class="a">عَسَىٰ</span><span class="e">Perhaps</span></div></td><td class="ww" width="107" align="center"><div style="width:76px" onclick="pl(1128)"><span class="a">رَبُّهُۥٓ</span><span class="e">his Lord,</span></div></td><td class="ww" width="75" align="center"><div style="width:44px" onclick="pl(225)"><span class="a">إِن</span><span class="e">if</span></div></td><td class="ww" width="162" align="center"><div style="width:131px" onclick="pl(17064)"><span class="a">طَلَّقَكُنَّ</span><span class="e">he divorced you,</span></div></td><td class="ww" width="91" align="center"><div style="width:60px" onclick="pl(655)"><span class="a">أَن</span><span class="e">[that]</span></div></td><td class="ww" width="200" align="left"><div style="width:184px" onclick="pl(17065)"><span class="a">يُبْدِلَهُۥٓ</span><span class="e">He will substitute for him</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="98" align="right"><div style="width:88px" onclick="pl(2084)"><span class="a">أَزْوَٲجًا</span><span class="e">wives</span></div></td><td class="ww" width="88" align="center"><div style="width:68px" onclick="pl(1388)"><span class="a">خَيْرًا</span><span class="e">better</span></div></td><td class="ww" width="99" align="center"><div style="width:79px" onclick="pl(14011)"><span class="a">مِّنكُنَّ</span><span class="e">than you</span></div></td><td class="ww" width="120" align="center"><div style="width:100px" onclick="pl(17066)"><span class="a">مُسْلِمَـٰتٍ</span><span class="e">submissive,</span></div></td><td class="ww" width="118" align="center"><div style="width:98px" onclick="pl(16868)"><span class="a">مُّؤْمِنَـٰتٍ</span><span class="e">faithful,</span></div></td><td class="ww" width="102" align="center"><div style="width:82px" onclick="pl(17067)"><span class="a">قَـٰنِتَـٰتٍ</span><span class="e">obedient,</span></div></td><td class="ww" width="100" align="left"><div style="width:90px" onclick="pl(17068)"><span class="a">تَـٰٓئِبَـٰتٍ</span><span class="e">repentant,</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="148" align="right"><div style="width:107px" onclick="pl(17069)"><span class="a">عَـٰبِدَٲتٍ</span><span class="e">who worship,</span></div></td><td class="ww" width="180" align="center"><div style="width:99px" onclick="pl(17070)"><span class="a">سَـٰٓئِحَـٰتٍ</span><span class="e">who fast,</span></div></td><td class="ww" width="220" align="center"><div style="width:139px" onclick="pl(17071)"><span class="a">ثَيِّبَـٰتٍ</span><span class="e">previously married</span></div></td><td class="ww" width="122" align="center"><div style="width:96px" onclick="pl(17072)"><span class="a">وَأَبْكَارًا</span><span class="e">and virgins.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٥</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-5" lang="en" onclick="sa(5, 'en');" ondblclick="pa(this);">Perhaps his Lord, if he divorced you [all], would substitute for him wives better than you – submitting [to Allah], believing, devoutly obedient, repentant, worshipping, and traveling – [ones] previously married and virgins.</span></div><div class="sep-aya"></div><div id="aya-6-top"></div><div class="aya-A"><span class="link" rel="aya-6" lang="ar" onclick="sa(6);" ondblclick="pa(this);">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ قُوٓاْ أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا وَقُودُهَا ٱلنَّاسُ وَٱلْحِجَارَةُ عَلَيْهَا مَلَـٰٓئِكَةٌ غِلَاظٌ شِدَادٌ لَّا يَعْصُونَ ٱللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ</span> <span class="aya_num">﴿<strong>٦</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="214" align="right"><div style="width:197px" onclick="pl(7177)"><span class="a">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ</span><span class="e">O you who believe!</span></div></td><td class="ww" width="103" align="center"><div style="width:69px" onclick="pl(17073)"><span class="a">قُوٓاْ</span><span class="e">Protect</span></div></td><td class="ww" width="124" align="center"><div style="width:90px" onclick="pl(449)"><span class="a">أَنفُسَكُمْ</span><span class="e">yourselves</span></div></td><td class="ww" width="165" align="center"><div style="width:131px" onclick="pl(17074)"><span class="a">وَأَهْلِيكُمْ</span><span class="e">and your families</span></div></td><td class="ww" width="120" align="left"><div style="width:103px" onclick="pl(140)"><span class="a">نَارًا</span><span class="e">(from) a Fire</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="101" align="right"><div style="width:91px" onclick="pl(233)"><span class="a">وَقُودُهَا</span><span class="e">whose fuel</span></div></td><td class="ww" width="110" align="center"><div style="width:90px" onclick="pl(112)"><span class="a">ٱلنَّاسُ</span><span class="e">(is) people</span></div></td><td class="ww" width="134" align="center"><div style="width:114px" onclick="pl(234)"><span class="a">وَٱلْحِجَارَةُ</span><span class="e">and stones,</span></div></td><td class="ww" width="89" align="center"><div style="width:69px" onclick="pl(1269)"><span class="a">عَلَيْهَا</span><span class="e">over it</span></div></td><td class="ww" width="121" align="center"><div style="width:101px" onclick="pl(10548)"><span class="a">مَلَـٰٓئِكَةٌ</span><span class="e">(are) Angels</span></div></td><td class="ww" width="90" align="center"><div style="width:70px" onclick="pl(17075)"><span class="a">غِلَاظٌ</span><span class="e">stern,</span></div></td><td class="ww" width="80" align="left"><div style="width:70px" onclick="pl(9056)"><span class="a">شِدَادٌ</span><span class="e">severe;</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="54" align="right"><div style="width:42px" onclick="pl(30)"><span class="a">لَّا</span><span class="e">not</span></div></td><td class="ww" width="128" align="center"><div style="width:105px" onclick="pl(17076)"><span class="a">يَعْصُونَ</span><span class="e">they disobey</span></div></td><td class="ww" width="76" align="center"><div style="width:53px" onclick="pl(184)"><span class="a">ٱللَّهَ</span><span class="e">Allah</span></div></td><td class="ww" width="104" align="center"><div style="width:81px" onclick="pl(262)"><span class="a">مَآ</span><span class="e">(in) what</span></div></td><td class="ww" width="173" align="center"><div style="width:150px" onclick="pl(9150)"><span class="a">أَمَرَهُمْ</span><span class="e">He Commands them</span></div></td><td class="ww" width="124" align="center"><div style="width:101px" onclick="pl(9982)"><span class="a">وَيَفْعَلُونَ</span><span class="e">but they do</span></div></td><td class="ww" width="65" align="left"><div style="width:53px" onclick="pl(262)"><span class="a">مَا</span><span class="e">what</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="149" align="right"><div style="width:164px" onclick="pl(9983)"><span class="a">يُؤْمَرُونَ</span><span class="e">they are commanded.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٦</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-6" lang="en" onclick="sa(6, 'en');" ondblclick="pa(this);">O you who have believed, protect yourselves and your families from a Fire whose fuel is people and stones, over which are [appointed] angels, harsh and severe; they do not disobey Allah in what He commands them but do what they are commanded.</span></div><div class="sep-aya"></div><div id="aya-7-top"></div><div class="aya-A"><span class="link" rel="aya-7" lang="ar" onclick="sa(7);" ondblclick="pa(this);">يَـٰٓأَيُّهَا ٱلَّذِينَ كَفَرُواْ لَا تَعْتَذِرُواْ ٱلْيَوْمَۖ إِنَّمَا تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ</span> <span class="aya_num">﴿<strong>٧</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="221" align="right"><div style="width:193px" onclick="pl(17077)"><span class="a">يَـٰٓأَيُّهَا ٱلَّذِينَ كَفَرُواْ</span><span class="e">`O you who disbelieve!</span></div></td><td class="ww" width="132" align="center"><div style="width:76px" onclick="pl(30)"><span class="a">لَا</span><span class="e">(Do) not</span></div></td><td class="ww" width="168" align="center"><div style="width:112px" onclick="pl(7709)"><span class="a">تَعْتَذِرُواْ</span><span class="e">make excuses</span></div></td><td class="ww" width="122" align="center"><div style="width:67px" onclick="pl(2217)"><span class="a">ٱلْيَوْمَۖ</span><span class="e">today.</span></div></td><td class="ww" width="83" align="left"><div style="width:55px" onclick="pl(102)"><span class="a">إِنَّمَا</span><span class="e">Only</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="217" align="right"><div style="width:182px" onclick="pl(5841)"><span class="a">تُجْزَوْنَ</span><span class="e">you will be recompensed</span></div></td><td class="ww" width="159" align="center"><div style="width:88px" onclick="pl(262)"><span class="a">مَا</span><span class="e">(for) what</span></div></td><td class="ww" width="182" align="center"><div style="width:111px" onclick="pl(214)"><span class="a">كُنتُمْ</span><span class="e">you used (to)</span></div></td><td class="ww" width="112" align="center"><div style="width:92px" onclick="pl(725)"><span class="a">تَعْمَلُونَ</span><span class="e">do.`</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٧</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-7" lang="en" onclick="sa(7, 'en');" ondblclick="pa(this);">O you who have disbelieved, make no excuses that Day. You will only be recompensed for what you used to do.</span></div><div class="sep-aya"></div><div id="aya-8-top"></div><div class="aya-A"><span class="link" rel="aya-8" lang="ar" onclick="sa(8);" ondblclick="pa(this);">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ تُوبُوٓاْ إِلَى ٱللَّهِ تَوْبَةً نَّصُوحًا عَسَىٰ رَبُّكُمْ أَن يُكَفِّرَ عَنكُمْ سَيِّـَٔـاتِكُمْ وَيُدْخِلَكُمْ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ يَوْمَ لَا يُخْزِى ٱللَّهُ ٱلنَّبِىَّ وَٱلَّذِينَ ءَامَنُواْ مَعَهُۥۖ نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَـٰنِهِمْ يَقُولُونَ رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَٱغْفِرْ لَنَآۖ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ</span> <span class="aya_num">﴿<strong>٨</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="210" align="right"><div style="width:197px" onclick="pl(7177)"><span class="a">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ</span><span class="e">O you who believe!</span></div></td><td class="ww" width="98" align="center"><div style="width:71px" onclick="pl(8361)"><span class="a">تُوبُوٓاْ</span><span class="e">Turn</span></div></td><td class="ww" width="80" align="center"><div style="width:53px" onclick="pl(118)"><span class="a">إِلَى</span><span class="e">to</span></div></td><td class="ww" width="80" align="center"><div style="width:53px" onclick="pl(606)"><span class="a">ٱللَّهِ</span><span class="e">Allah</span></div></td><td class="ww" width="150" align="center"><div style="width:123px" onclick="pl(4322)"><span class="a">تَوْبَةً</span><span class="e">(in) repentance</span></div></td><td class="ww" width="106" align="left"><div style="width:93px" onclick="pl(17078)"><span class="a">نَّصُوحًا</span><span class="e">sincere!</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="82" align="right"><div style="width:73px" onclick="pl(4255)"><span class="a">عَسَىٰ</span><span class="e">Perhaps</span></div></td><td class="ww" width="100" align="center"><div style="width:82px" onclick="pl(3243)"><span class="a">رَبُّكُمْ</span><span class="e">your Lord</span></div></td><td class="ww" width="78" align="center"><div style="width:60px" onclick="pl(655)"><span class="a">أَن</span><span class="e">[that]</span></div></td><td class="ww" width="112" align="center"><div style="width:93px" onclick="pl(17079)"><span class="a">يُكَفِّرَ</span><span class="e">will remove</span></div></td><td class="ww" width="96" align="center"><div style="width:78px" onclick="pl(507)"><span class="a">عَنكُمْ</span><span class="e">from you</span></div></td><td class="ww" width="132" align="center"><div style="width:114px" onclick="pl(2447)"><span class="a">سَيِّـَٔـاتِكُمْ</span><span class="e">your misdeeds</span></div></td><td class="ww" width="123" align="left"><div style="width:114px" onclick="pl(17080)"><span class="a">وَيُدْخِلَكُمْ</span><span class="e">and admit you</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="126" align="right"><div style="width:115px" onclick="pl(241)"><span class="a">جَنَّـٰتٍ</span><span class="e">(into) Gardens</span></div></td><td class="ww" width="104" align="center"><div style="width:81px" onclick="pl(242)"><span class="a">تَجْرِى</span><span class="e">flow</span></div></td><td class="ww" width="72" align="center"><div style="width:50px" onclick="pl(53)"><span class="a">مِن</span><span class="e">from</span></div></td><td class="ww" width="132" align="center"><div style="width:109px" onclick="pl(243)"><span class="a">تَحْتِهَا</span><span class="e">underneath it</span></div></td><td class="ww" width="110" align="center"><div style="width:88px" onclick="pl(244)"><span class="a">ٱلْأَنْهَـٰرُ</span><span class="e">the rivers,</span></div></td><td class="ww" width="128" align="center"><div style="width:105px" onclick="pl(1057)"><span class="a">يَوْمَ</span><span class="e">(on the) Day</span></div></td><td class="ww" width="53" align="left"><div style="width:42px" onclick="pl(30)"><span class="a">لَا</span><span class="e">not</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="148" align="right"><div style="width:136px" onclick="pl(17081)"><span class="a">يُخْزِى ٱللَّهُ</span><span class="e">Allah will disgrace</span></div></td><td class="ww" width="123" align="center"><div style="width:98px" onclick="pl(7687)"><span class="a">ٱلنَّبِىَّ</span><span class="e">the Prophet</span></div></td><td class="ww" width="143" align="center"><div style="width:118px" onclick="pl(42)"><span class="a">وَٱلَّذِينَ</span><span class="e">and those who</span></div></td><td class="ww" width="107" align="center"><div style="width:82px" onclick="pl(84)"><span class="a">ءَامَنُواْ</span><span class="e">believed</span></div></td><td class="ww" width="105" align="center"><div style="width:80px" onclick="pl(1875)"><span class="a">مَعَهُۥۖ</span><span class="e">with him.</span></div></td><td class="ww" width="98" align="left"><div style="width:86px" onclick="pl(16635)"><span class="a">نُورُهُمْ</span><span class="e">Their light</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="83" align="right"><div style="width:77px" onclick="pl(13381)"><span class="a">يَسْعَىٰ</span><span class="e">will run</span></div></td><td class="ww" width="129" align="center"><div style="width:117px" onclick="pl(2273)"><span class="a">بَيْنَ أَيْدِيهِمْ</span><span class="e">before them</span></div></td><td class="ww" width="153" align="center"><div style="width:141px" onclick="pl(16636)"><span class="a">وَبِأَيْمَـٰنِهِمْ</span><span class="e">and on their right;</span></div></td><td class="ww" width="120" align="center"><div style="width:108px" onclick="pl(753)"><span class="a">يَقُولُونَ</span><span class="e">they will say,</span></div></td><td class="ww" width="96" align="center"><div style="width:84px" onclick="pl(1167)"><span class="a">رَبَّنَآ</span><span class="e">`Our Lord</span></div></td><td class="ww" width="80" align="center"><div style="width:68px" onclick="pl(17082)"><span class="a">أَتْمِمْ</span><span class="e">Perfect</span></div></td><td class="ww" width="64" align="left"><div style="width:58px" onclick="pl(338)"><span class="a">لَنَا</span><span class="e">for us</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="84" align="right"><div style="width:74px" onclick="pl(17083)"><span class="a">نُورَنَا</span><span class="e">our light</span></div></td><td class="ww" width="183" align="center"><div style="width:164px" onclick="pl(2604)"><span class="a">وَٱغْفِرْ</span><span class="e">and grant forgiveness</span></div></td><td class="ww" width="78" align="center"><div style="width:59px" onclick="pl(338)"><span class="a">لَنَآۖ</span><span class="e">to us.</span></div></td><td class="ww" width="119" align="center"><div style="width:100px" onclick="pl(340)"><span class="a">إِنَّكَ</span><span class="e">Indeed, You</span></div></td><td class="ww" width="106" align="center"><div style="width:87px" onclick="pl(52)"><span class="a">عَلَىٰ</span><span class="e">(are) over</span></div></td><td class="ww" width="76" align="center"><div style="width:57px" onclick="pl(185)"><span class="a">كُلِّ</span><span class="e">every</span></div></td><td class="ww" width="79" align="left"><div style="width:69px" onclick="pl(186)"><span class="a">شَىْءٍ</span><span class="e">thing</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="96" align="right"><div style="width:111px" onclick="pl(187)"><span class="a">قَدِيرٌ</span><span class="e">All-Powerful.`</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٨</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-8" lang="en" onclick="sa(8, 'en');" ondblclick="pa(this);">O you who have believed, repent to Allah with sincere repentance. Perhaps your Lord will remove from you your misdeeds and admit you into gardens beneath which rivers flow [on] the Day when Allah will not disgrace the Prophet and those who believed with him. Their light will proceed before them and on their right; they will say, "Our Lord, perfect for us our light and forgive us. Indeed, You are over all things competent."</span></div><div class="sep-aya"></div><div id="aya-9-top"></div><div class="aya-A"><span class="link" rel="aya-9" lang="ar" onclick="sa(9);" ondblclick="pa(this);">يَـٰٓأَيُّهَا ٱلنَّبِىُّ جَـٰهِدِ ٱلْكُفَّارَ وَٱلْمُنَـٰفِقِينَ وَٱغْلُظْ عَلَيْهِمْۚ وَمَأْوَٮٰهُمْ جَهَنَّمُۖ وَبِئْسَ ٱلْمَصِيرُ</span> <span class="aya_num">﴿<strong>٩</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="136" align="right"><div style="width:125px" onclick="pl(7360)"><span class="a">يَـٰٓأَيُّهَا ٱلنَّبِىُّ</span><span class="e">O Prophet!</span></div></td><td class="ww" width="90" align="center"><div style="width:68px" onclick="pl(7747)"><span class="a">جَـٰهِدِ</span><span class="e">Strive</span></div></td><td class="ww" width="210" align="center"><div style="width:188px" onclick="pl(7748)"><span class="a">ٱلْكُفَّارَ</span><span class="e">(against) the disbelievers</span></div></td><td class="ww" width="172" align="center"><div style="width:150px" onclick="pl(7749)"><span class="a">وَٱلْمُنَـٰفِقِينَ</span><span class="e">and the hypocrites,</span></div></td><td class="ww" width="115" align="left"><div style="width:104px" onclick="pl(7750)"><span class="a">وَٱغْلُظْ</span><span class="e">and be stern</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="109" align="right"><div style="width:91px" onclick="pl(22)"><span class="a">عَلَيْهِمْۚ</span><span class="e">with them.</span></div></td><td class="ww" width="161" align="center"><div style="width:125px" onclick="pl(7751)"><span class="a">وَمَأْوَٮٰهُمْ</span><span class="e">And their abode</span></div></td><td class="ww" width="111" align="center"><div style="width:75px" onclick="pl(1813)"><span class="a">جَهَنَّمُۖ</span><span class="e">(is) Hell,</span></div></td><td class="ww" width="162" align="center"><div style="width:126px" onclick="pl(1161)"><span class="a">وَبِئْسَ</span><span class="e">and wretched is</span></div></td><td class="ww" width="128" align="center"><div style="width:125px" onclick="pl(1162)"><span class="a">ٱلْمَصِيرُ</span><span class="e">the destination.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>٩</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-9" lang="en" onclick="sa(9, 'en');" ondblclick="pa(this);">O Prophet, strive against the disbelievers and the hypocrites and be harsh upon them. And their refuge is Hell, and wretched is the destination.</span></div><div class="sep-aya"></div><div id="aya-10-top"></div><div class="aya-A"><span class="link" rel="aya-10" lang="ar" onclick="sa(10);" ondblclick="pa(this);">ضَرَبَ ٱللَّهُ مَثَلاً لِّلَّذِينَ كَفَرُواْ ٱمْرَأَتَ نُوحٍ وَٱمْرَأَتَ لُوطٍۖ كَانَتَا تَحْتَ عَبْدَيْنِ مِنْ عِبَادِنَا صَـٰلِحَيْنِ فَخَانَتَاهُمَا فَلَمْ يُغْنِيَا عَنْهُمَا مِنَ ٱللَّهِ شَيْــًٔا وَقِيلَ ٱدْخُلَا ٱلنَّارَ مَعَ ٱلدَّٲخِلِينَ</span> <span class="aya_num">﴿<strong>١٠</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="141" align="right"><div style="width:128px" onclick="pl(9597)"><span class="a">ضَرَبَ ٱللَّهُ</span><span class="e">Allah presents</span></div></td><td class="ww" width="119" align="center"><div style="width:94px" onclick="pl(261)"><span class="a">مَثَلاً</span><span class="e">an example</span></div></td><td class="ww" width="137" align="center"><div style="width:112px" onclick="pl(750)"><span class="a">لِّلَّذِينَ</span><span class="e">for those who</span></div></td><td class="ww" width="129" align="center"><div style="width:104px" onclick="pl(59)"><span class="a">كَفَرُواْ</span><span class="e">disbelieved -</span></div></td><td class="ww" width="111" align="center"><div style="width:86px" onclick="pl(17084)"><span class="a">ٱمْرَأَتَ</span><span class="e">(the) wife</span></div></td><td class="ww" width="88" align="left"><div style="width:75px" onclick="pl(4641)"><span class="a">نُوحٍ</span><span class="e">(of) Nuh</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="126" align="right"><div style="width:115px" onclick="pl(17085)"><span class="a">وَٱمْرَأَتَ</span><span class="e">(and the) wife</span></div></td><td class="ww" width="98" align="center"><div style="width:76px" onclick="pl(8607)"><span class="a">لُوطٍۖ</span><span class="e">(of) Lut.</span></div></td><td class="ww" width="112" align="center"><div style="width:90px" onclick="pl(4697)"><span class="a">كَانَتَا</span><span class="e">They were</span></div></td><td class="ww" width="90" align="center"><div style="width:68px" onclick="pl(11341)"><span class="a">تَحْتَ</span><span class="e">under</span></div></td><td class="ww" width="125" align="center"><div style="width:103px" onclick="pl(17086)"><span class="a">عَبْدَيْنِ</span><span class="e">two [slaves]</span></div></td><td class="ww" width="72" align="center"><div style="width:50px" onclick="pl(53)"><span class="a">مِنْ</span><span class="e">of</span></div></td><td class="ww" width="100" align="left"><div style="width:89px" onclick="pl(8913)"><span class="a">عِبَادِنَا</span><span class="e">Our slaves</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="110" align="right"><div style="width:103px" onclick="pl(17087)"><span class="a">صَـٰلِحَيْنِ</span><span class="e">righteous,</span></div></td><td class="ww" width="234" align="center"><div style="width:219px" onclick="pl(17088)"><span class="a">فَخَانَتَاهُمَا</span><span class="e">but they both betrayed them,</span></div></td><td class="ww" width="77" align="center"><div style="width:62px" onclick="pl(4026)"><span class="a">فَلَمْ</span><span class="e">so not</span></div></td><td class="ww" width="121" align="center"><div style="width:106px" onclick="pl(17089)"><span class="a">يُغْنِيَا</span><span class="e">they availed,</span></div></td><td class="ww" width="126" align="center"><div style="width:111px" onclick="pl(3812)"><span class="a">عَنْهُمَا</span><span class="e">both of them,</span></div></td><td class="ww" width="57" align="left"><div style="width:50px" onclick="pl(156)"><span class="a">مِنَ</span><span class="e">from</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="78" align="right"><div style="width:53px" onclick="pl(606)"><span class="a">ٱللَّهِ</span><span class="e">Allah</span></div></td><td class="ww" width="160" align="center"><div style="width:110px" onclick="pl(472)"><span class="a">شَيْــًٔا</span><span class="e">(in) anything,</span></div></td><td class="ww" width="175" align="center"><div style="width:125px" onclick="pl(3478)"><span class="a">وَقِيلَ</span><span class="e">and it was said,</span></div></td><td class="ww" width="119" align="center"><div style="width:69px" onclick="pl(17090)"><span class="a">ٱدْخُلَا</span><span class="e">`Enter</span></div></td><td class="ww" width="121" align="center"><div style="width:71px" onclick="pl(231)"><span class="a">ٱلنَّارَ</span><span class="e">the Fire</span></div></td><td class="ww" width="73" align="left"><div style="width:48px" onclick="pl(443)"><span class="a">مَعَ</span><span class="e">with</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="127" align="right"><div style="width:142px" onclick="pl(17091)"><span class="a">ٱلدَّٲخِلِينَ</span><span class="e">those who enter.`</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>١٠</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-10" lang="en" onclick="sa(10, 'en');" ondblclick="pa(this);">Allah presents an example of those who disbelieved: the wife of Noah and the wife of Lot. They were under two of Our righteous servants but betrayed them, so those prophets did not avail them from Allah at all, and it was said, "Enter the Fire with those who enter."</span></div><div class="sep-aya"></div><div id="aya-11-top"></div><div class="aya-A"><span class="link" rel="aya-11" lang="ar" onclick="sa(11);" ondblclick="pa(this);">وَضَرَبَ ٱللَّهُ مَثَلاً لِّلَّذِينَ ءَامَنُواْ ٱمْرَأَتَ فِرْعَوْنَ إِذْ قَالَتْ رَبِّ ٱبْنِ لِى عِندَكَ بَيْتًا فِى ٱلْجَنَّةِ وَنَجِّنِى مِن فِرْعَوْنَ وَعَمَلِهِۦ وَنَجِّنِى مِنَ ٱلْقَوْمِ ٱلظَّـٰلِمِينَ</span> <span class="aya_num">﴿<strong>١١</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="154" align="right"><div style="width:143px" onclick="pl(10063)"><span class="a">وَضَرَبَ ٱللَّهُ</span><span class="e">And Allah presents</span></div></td><td class="ww" width="116" align="center"><div style="width:94px" onclick="pl(261)"><span class="a">مَثَلاً</span><span class="e">an example</span></div></td><td class="ww" width="134" align="center"><div style="width:112px" onclick="pl(750)"><span class="a">لِّلَّذِينَ</span><span class="e">for those who</span></div></td><td class="ww" width="108" align="center"><div style="width:86px" onclick="pl(84)"><span class="a">ءَامَنُواْ</span><span class="e">believed -</span></div></td><td class="ww" width="108" align="center"><div style="width:86px" onclick="pl(17084)"><span class="a">ٱمْرَأَتَ</span><span class="e">(the) wife</span></div></td><td class="ww" width="106" align="left"><div style="width:95px" onclick="pl(2649)"><span class="a">فِرْعَوْنَ</span><span class="e">(of) Firaun,</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="62" align="right"><div style="width:55px" onclick="pl(1198)"><span class="a">إِذْ</span><span class="e">when</span></div></td><td class="ww" width="93" align="center"><div style="width:79px" onclick="pl(2789)"><span class="a">قَالَتْ</span><span class="e">she said,</span></div></td><td class="ww" width="99" align="center"><div style="width:85px" onclick="pl(7)"><span class="a">رَبِّ</span><span class="e">`My Lord!</span></div></td><td class="ww" width="66" align="center"><div style="width:52px" onclick="pl(5009)"><span class="a">ٱبْنِ</span><span class="e">Build</span></div></td><td class="ww" width="76" align="center"><div style="width:62px" onclick="pl(1351)"><span class="a">لِى</span><span class="e">for me</span></div></td><td class="ww" width="93" align="center"><div style="width:79px" onclick="pl(6754)"><span class="a">عِندَكَ</span><span class="e">near You</span></div></td><td class="ww" width="86" align="center"><div style="width:72px" onclick="pl(13642)"><span class="a">بَيْتًا</span><span class="e">a house</span></div></td><td class="ww" width="62" align="center"><div style="width:48px" onclick="pl(89)"><span class="a">فِى</span><span class="e">in</span></div></td><td class="ww" width="87" align="left"><div style="width:80px" onclick="pl(778)"><span class="a">ٱلْجَنَّةِ</span><span class="e">Paradise,</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="114" align="right"><div style="width:104px" onclick="pl(13004)"><span class="a">وَنَجِّنِى</span><span class="e">and save me</span></div></td><td class="ww" width="70" align="center"><div style="width:50px" onclick="pl(53)"><span class="a">مِن</span><span class="e">from</span></div></td><td class="ww" width="114" align="center"><div style="width:93px" onclick="pl(2649)"><span class="a">فِرْعَوْنَ</span><span class="e">Firaun</span></div></td><td class="ww" width="132" align="center"><div style="width:111px" onclick="pl(17092)"><span class="a">وَعَمَلِهِۦ</span><span class="e">and his deeds</span></div></td><td class="ww" width="124" align="center"><div style="width:104px" onclick="pl(13004)"><span class="a">وَنَجِّنِى</span><span class="e">and save me</span></div></td><td class="ww" width="70" align="center"><div style="width:50px" onclick="pl(156)"><span class="a">مِنَ</span><span class="e">from</span></div></td><td class="ww" width="100" align="left"><div style="width:90px" onclick="pl(2608)"><span class="a">ٱلْقَوْمِ</span><span class="e">the people</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="121" align="right"><div style="width:136px" onclick="pl(377)"><span class="a">ٱلظَّـٰلِمِينَ</span><span class="e">the wrongdoers.`</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>١١</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-11" lang="en" onclick="sa(11, 'en');" ondblclick="pa(this);">And Allah presents an example of those who believed: the wife of Pharaoh, when she said, "My Lord, build for me near You a house in Paradise and save me from Pharaoh and his deeds and save me from the wrongdoing people."</span></div><div class="sep-aya"></div><div id="aya-12-top"></div><div class="aya-A"><span class="link" rel="aya-12" lang="ar" onclick="sa(12);" ondblclick="pa(this);">وَمَرْيَمَ ٱبْنَتَ عِمْرَٲنَ ٱلَّتِىٓ أَحْصَنَتْ فَرْجَهَا فَنَفَخْنَا فِيهِ مِن رُّوحِنَا وَصَدَّقَتْ بِكَلِمَـٰتِ رَبِّهَا وَكُتُبِهِۦ وَكَانَتْ مِنَ ٱلْقَـٰنِتِينَ</span> <span class="aya_num">﴿<strong>١٢</strong>﴾</span></div><div class="sep-thin"></div><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="120" align="right"><div style="width:106px" onclick="pl(17093)"><span class="a">وَمَرْيَمَ</span><span class="e">And Maryam,</span></div></td><td class="ww" width="147" align="center"><div style="width:118px" onclick="pl(17094)"><span class="a">ٱبْنَتَ</span><span class="e">(the) daughter</span></div></td><td class="ww" width="119" align="center"><div style="width:90px" onclick="pl(2779)"><span class="a">عِمْرَٲنَ</span><span class="e">(of) Imran</span></div></td><td class="ww" width="90" align="center"><div style="width:61px" onclick="pl(232)"><span class="a">ٱلَّتِىٓ</span><span class="e">who</span></div></td><td class="ww" width="131" align="center"><div style="width:102px" onclick="pl(11907)"><span class="a">أَحْصَنَتْ</span><span class="e">guarded</span></div></td><td class="ww" width="119" align="left"><div style="width:105px" onclick="pl(11908)"><span class="a">فَرْجَهَا</span><span class="e">her chastity,</span></div></td></tr></tbody></table><table class="aya-W" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="141" align="right"><div style="width:125px" onclick="pl(11909)"><span class="a">فَنَفَخْنَا</span><span class="e">so We breathed</span></div></td><td class="ww" width="90" align="center"><div style="width:59px" onclick="pl(32)"><span class="a">فِيهِ</span><span class="e">into it</span></div></td><td class="ww" width="81" align="center"><div style="width:50px" onclick="pl(53)"><span class="a">مِن</span><span class="e">of</span></div></td><td class="ww" width="118" align="center"><div style="width:87px" onclick="pl(11910)"><span class="a">رُّوحِنَا</span><span class="e">Our Spirit.</span></div></td><td class="ww" width="163" align="center"><div style="width:132px" onclick="pl(17095)"><span class="a">وَصَدَّقَتْ</span><span class="e">And she believed</span></div></td><td class="ww" width="132" align="left"><div style="width:116px" onclick="pl(17096)"><span class="a">بِكَلِمَـٰتِ</span><span class="e">(in the) Words</span></div></td></tr></tbody></table><table class="aya-W last" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="ww" width="120" align="right"><div style="width:104px" onclick="pl(9603)"><span class="a">رَبِّهَا</span><span class="e">(of) her Lord</span></div></td><td class="ww" width="149" align="center"><div style="width:116px" onclick="pl(2586)"><span class="a">وَكُتُبِهِۦ</span><span class="e">and His Books,</span></div></td><td class="ww" width="136" align="center"><div style="width:103px" onclick="pl(17097)"><span class="a">وَكَانَتْ</span><span class="e">and she was</span></div></td><td class="ww" width="83" align="center"><div style="width:50px" onclick="pl(156)"><span class="a">مِنَ</span><span class="e">of</span></div></td><td class="ww" width="172" align="center"><div style="width:171px" onclick="pl(17098)"><span class="a">ٱلْقَـٰنِتِينَ</span><span class="e">the devoutly obedient.</span></div></td><td valign="middle" class="n"><span class="aya_num">﴿<strong>١٢</strong>﴾</span></td></tr></tbody></table><div class="sep-thin"></div><div class="aya-E en"><span class="link" rel="aya-12" lang="en" onclick="sa(12, 'en');" ondblclick="pa(this);">And [the example of] Mary, the daughter of ‘Imran, who guarded her chastity, so We blew into [her garment] through Our angel, and she believed in the words of her Lord and His scriptures and was of the devoutly obedient.</span></div></div><div class="clear"></div></div>
+                            </div>
+                        </div>
+                        <div class="slider" rel="text" id="slc" style="height: 313px;">
+                            <a class="top"></a>
+                            <a class="up"></a>
+                            <div class="space ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all" rel="text" style="height: 237px;"><div class="ui-slider-range ui-slider-range-min ui-widget-header" style="height: 100%;"></div><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="bottom: 100%;"></a></div>
+                            <a class="down"></a>
+                            <a class="bottom"></a>
+                        </div>
+                    </div> <!-- content -->
+                </div> <!-- main -->
+            </div> <!-- page/container -->
+        </div> <!-- page -->
+
+        <div class="overlay"></div>
+        <div class="popup" id="display_popup" style="width: 371px; margin-left: -185px; margin-top: -279px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div class="PopupConents" style="position:relative">
+					<div class="PopupLogo"><a href="#"><img src="inc/images/popups/allahs_quraan.png" alt="" title=""></a></div>
+					<div class="clear"></div>
+					<h2>DISPLAY</h2>
+					<div class="left">        
+						<form action="#" method="post">
+							<ul class="CheckList" id="display_list">
+								<li class="CheckList2"><span class="checkbox" id="chk_display_arabic" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="display_arabic" name="display_arabic" value="1"><label for="display_arabic">Arabic</label></li>
+								<li class="CheckList2"><span class="checkbox" id="chk_display_english" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="display_english" name="display_english" value="2"><label for="display_english">Translation</label></li>
+								<li class="CheckList2"><span class="checkbox" id="chk_display_word" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="display_word" name="display_word" value="3"><label for="display_word">Word for Word</label></li>
+								<li class="CheckList2"><span class="checkbox" id="chk_display_tajweed" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="display_tajweed" name="display_tajweed" value="4"><label for="display_tajweed">Tajweed</label></li>
+							</ul>                
+						</form>          
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3 style="margin-bottom:4px">TRANSLATION</h3>
+						<div class="SelectLanguage" id="Language-0">
+							<div class="PopupSelectBox" id="Container_L0">
+								<span class="Value">Albanian</span>
+								<span class="SelectArrow Right"><a class="SmallArrow Right" href="#">Select</a></span>
+								<div class="optionsList" style="display: none;">
+									<ul>
+										<li><a href="#2">Albanian</a></li>
+<li><a href="#3">Azerbaijani</a></li>
+<li><a href="#4">Chinese</a></li>
+<li><a href="#5">Dutch</a></li>
+<li><a href="#1">English</a></li>
+<li><a href="#6">French</a></li>
+<li><a href="#7">Persian</a></li>
+<li><a href="#8">Portuguese</a></li>
+<li><a href="#9">Russian</a></li>
+<li><a href="#10">Spanish</a></li>
+<li><a href="#11">Swedish</a></li>
+<li><a href="#12">Urdu</a></li>
+									</ul>
+								</div>
+							<input type="hidden" value="" id="L0" name="L0"></div>
+							<a class="extra" id="remove-language-0" href="#">X</a>
+							<a class="extra add-language" id="add-language-0" href="#">Add another</a>
+						</div>
+						<div class="clear"></div>
+						<div class="SelectLanguage" id="Language-1">
+							<div class="PopupSelectBox" id="Container_L1">
+								<span class="Value">Choose..</span>
+								<span class="SelectArrow Right"><a class="SmallArrow Right" href="#">Select</a></span>
+								<div class="optionsList" style="display: none;">
+									<ul>
+										<li><a href="#0">Choose..</a></li>
+										<li><a href="#2">Albanian</a></li>
+<li><a href="#3">Azerbaijani</a></li>
+<li><a href="#4">Chinese</a></li>
+<li><a href="#5">Dutch</a></li>
+<li><a href="#1">English</a></li>
+<li><a href="#6">French</a></li>
+<li><a href="#7">Persian</a></li>
+<li><a href="#8">Portuguese</a></li>
+<li><a href="#9">Russian</a></li>
+<li><a href="#10">Spanish</a></li>
+<li><a href="#11">Swedish</a></li>
+<li><a href="#12">Urdu</a></li>
+									</ul>
+								</div>
+							<input type="hidden" value="" id="L1" name="L1"></div>						
+							<a class="extra" id="remove-language-1" href="#">X</a>
+							<a class="extra add-language" id="add-language-1" href="#">Add another</a>
+						</div>
+						<div class="clear"></div>
+						<div class="SelectLanguage" id="Language-2">
+							<div class="PopupSelectBox" id="Container_L2">
+								<span class="Value">Choose..</span>
+								<span class="SelectArrow Right"><a class="SmallArrow Right" href="#">Select</a></span>
+								<div class="optionsList" style="display: none;">
+									<ul>
+										<li><a href="#0">Choose..</a></li>
+										<li><a href="#2">Albanian</a></li>
+<li><a href="#3">Azerbaijani</a></li>
+<li><a href="#4">Chinese</a></li>
+<li><a href="#5">Dutch</a></li>
+<li><a href="#1">English</a></li>
+<li><a href="#6">French</a></li>
+<li><a href="#7">Persian</a></li>
+<li><a href="#8">Portuguese</a></li>
+<li><a href="#9">Russian</a></li>
+<li><a href="#10">Spanish</a></li>
+<li><a href="#11">Swedish</a></li>
+<li><a href="#12">Urdu</a></li>
+									</ul>
+								</div>
+							<input type="hidden" value="" id="L2" name="L2"></div>
+							<a class="extra" id="remove-language-2" href="#">X</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3 style="margin-bottom:4px">ARABIC FONT</h3>
+						<div class="PopupSelectBox" id="Container_ArabicFont">
+							<span id="arabic-font" class="Value">Arial</span>
+							<span class="SelectArrow Right"><a class="SmallArrow Right" href="#">Select</a></span>
+							<div class="optionsList" style="display: none;">
+								<ul>
+									<li><a class="font" href="#arial">Arial</a></li>
+									<li><a class="font" href="#pdms">PDMS Saleem</a></li>
+									<li><a class="font" href="#scheherazade">Scheherazade</a></li>
+									<li><a class="font" href="#me_quran">Me Quran</a></li>
+								</ul>
+							</div>
+						<input type="hidden" value="" id="ArabicFont" name="ArabicFont"></div>
+						<div class="clear"></div>
+						<div id="font-alert" class="alert" style="display: none;">The font is not installed on your machine&nbsp; <a href="#" id="install">Install</a></div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>ARABIC MODE DISPLAY</h3>
+						<form action="#" method="post">
+							<ul class="CheckList">
+								<li class="CheckList2"><span class="radio" id="chk_arabic_mode_continuous" style="background-position: 0px 0px;"></span><input type="radio" class="styled" id="arabic_mode_continuous" name="arabic_mode" value="1"><label for="arabic_mode_continuous">Continuous</label></li>
+								<li class="CheckList2"><span class="radio" id="chk_arabic_mode_verse" style="background-position: 0px 0px;"></span><input type="radio" class="styled" id="arabic_mode_verse" name="arabic_mode" value="2"><label for="arabic_mode_verse">Verse Per Line</label></li>
+							</ul>
+						</form>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>TRANSLATION MODE DISPLAY</h3>
+						<form action="#" method="post">
+							<ul class="CheckList">
+								<li class="CheckList2"><span class="radio" id="chk_english_mode_continuous" style="background-position: 0px 0px;"></span><input type="radio" class="styled" id="english_mode_continuous" name="english_mode" value="1"><label for="english_mode_continuous">Continuous</label></li>
+								<li class="CheckList2"><span class="radio" id="chk_english_mode_verse" style="background-position: 0px 0px;"></span><input type="radio" class="styled" id="english_mode_verse" name="english_mode" value="2"><label for="english_mode_verse">Verse Per Line</label></li>
+							</ul>
+						</form>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<input type="button" id="display_submit" class="submit Left display refresh" value="SUBMIT">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div><div id="playback_popup" class="popup" style="width: 371px; margin-left: -185px; margin-top: -247px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div class="PopupConents">
+					<div class="PopupLogo"><img src="inc/images/popups/allahs_quraan.png" alt=""></div>
+					<div class="clear"></div>
+					<h2>PLAYBACK</h2>
+					<div class="left">
+						<h3 style="margin-bottom:4px">CHOOSE A RECITER</h3>
+						<div class="PopupSelectBox Wider" id="Container_Reciter">
+							<span id="reciter-name" class="Value">Abdul-Basit Abdus-Samad (Mujawwad)</span>
+							<span class="SelectArrow Right"><a class="SmallArrow Right" href="#">Select</a></span>
+							<div class="optionsList">
+								<ul>
+									<li><a href="#abdul-basit_abdus-samad_mujawwad">Abdul-Basit Abdus-Samad (Mujawwad)</a></li><li><a href="#abdul-basit_abdus-samad_murattal	">Abdul-Basit Abdus-Samad (Murattal)</a></li><li><a href="#abdullah_awwad_al-juhani">Abdullah Awwad Al-Juhani</a></li><li><a href="#abdullah_basfar">Abdullah Basfar</a></li><li><a href="#abdullah_matroud">Abdullah Matroud</a></li><li><a href="#abdul-muhsin_al-qasim">Abdul-Muhsin Al-Qasim</a></li><li><a href="#abdur-rahman_as-sudais">Abdur-Rahman As-Sudais</a></li><li><a href="#abu_bakr_ash-shatiri">Abu Bakr Ash-Shatiri</a></li><li><a href="#ahmad_al-ajmi">Ahmad Al-Ajmi</a></li><li><a href="#ali_al-hudthayfi">Ali Al-Hudthayfi</a></li><li><a href="#ali_hajjaj_as-suwaysi">Ali Hajjaj As-Suwaysi</a></li><li><a href="#hani_ar-rifai">Hani Ar-Rifai</a></li><li><a href="#ibrahim_al-akhdar">Ibrahim Al-Akhdar</a></li><li><a href="#jazza_as-suwaylih">Jazza' As-Suwaylih</a></li><li><a href="#khalid_abdullah_al-qahtani">Khalid Abdullah Al-Qahtani</a></li><li><a href="#khalifah_at-tunayji">Khalifah At-Tunayji</a></li><li><a href="#maher_al-muayqli">Maher Al-Mu'ayqli</a></li><li><a href="#mahmoud_ali_al-banna">Mahmoud Ali Al-Banna</a></li><li><a href="#mahmoud_khalil_al-husari_murattal">Mahmoud Khalil Al-Husari (Murattal)</a></li><li><a href="#mahmoud_khalil_al-husari_mujawwad">Mahmoud Khalil Al-Husari (Mujawwad)</a></li><li><a href="#mahmoud_khalil_al-husari_teacher">Mahmoud Khalil Al-Husari (Teacher)</a></li><li><a href="#mishary_al-afasy">Mishary Al-Afasy</a></li><li><a href="#mishary_al-afasy_teacher">Mishary Al-Afasy (Teacher - Juz' Amma)</a></li><li><a href="#muhammad_abdul-karim">Muhammad Abdul-Karim</a></li><li><a href="#muhammad_at-tablawi">Muhammad At-Tablawi</a></li><li><a href="#muhammad_ayyoub">Muhammad Ayyoub</a></li><li><a href="#muhammad_jibril">Muhammad Jibril</a></li><li><a href="#muhammad_siddiq_al-minshawi_mujawwad">Muhammad Siddiq Al-Minshawi (Mujawwad)</a></li><li><a href="#muhammad_siddiq_al-minshawi_murattal">Muhammad Siddiq Al-Minshawi (Murattal)</a></li><li><a href="#muhammad_siddiq_al-minshawi_teacher">Muhammad Siddiq Al-Minshawi (Teacher)</a></li><li><a href="#muhsin_al-qasim">Muhsin Al-Qasim</a></li><li><a href="#nasir_al-qatami">Nasir Al-Qatami</a></li><li><a href="#sad_al-ghamidi">Sa'd Al-Ghamidi</a></li><li><a href="#salah_al-budair">Salah Al-Budair</a></li><li><a href="#salah_bukhatir">Salah Bukhatir</a></li><li><a href="#saud_ash-shuraim">Sa'ud Ash-Shuraim</a></li>								</ul>
+							</div>
+						<input type="hidden" value="" id="Reciter" name="Reciter"></div>
+						<form action="#" method="post">
+							<ul class="CheckList left">
+								<li class="CheckList2" style="width:250px"><span class="checkbox" id="chk_play_english" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="play_english"><label for="play_english">Play Translation</label></li>
+							</ul>
+						</form>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>Repeat times</h3>
+						<p> Play each verse <span style=" margin-left:11px"><input class="times" name="times" type="text" id="repeat_count" value="1" onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');"></span> times</p>
+						<p> Play each chapter <span><input class="times" name="times" type="text" id="repeat_chapters_count" value="1" onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');"></span> times</p>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>AUTO PLAY</h3>
+						<form action="#" method="post">
+							<ul class="CheckList">
+								<li class="CheckList2"><span class="checkbox" id="chk_autoplay_verse" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="autoplay_verse" name="autoplay_verse" value="1"><label for="autoplay_verse">Next Verse</label></li>
+								<li class="CheckList2"><span class="checkbox" id="chk_autoplay_chapter" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="autoplay_chapter" name="autoplay_chapter" value="2"><label for="autoplay_chapter">Next Chapter</label></li>
+							</ul>
+						</form>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>wait between verses</h3>
+						<form action="#" method="post">
+							<ul class="CheckList left">
+								<li class="CheckList2"><span class="radio" id="chk_waitmode_continuous" style="background-position: 0px -50px;"></span><input type="radio" class="styled" id="waitmode_continuous" name="waitmode" value="0" checked="checked"><label for="waitmode_continuous">Continuous</label></li>
+								<li class="CheckList2" style="width:180px"><span class="radio" id="chk_waitmode_verse" style="background-position: 0px 0px;"></span><input type="radio" class="styled" id="waitmode_verse" name="waitmode" value="1"><label for="waitmode_verse">Duration of Verse</label></li>
+								<li class="CheckList2" style=" width:100%"><span class="radio" id="chk_waitmode_period" style="background-position: 0px 0px;"></span><input type="radio" class="styled" id="waitmode_period" name="waitmode" value="2"><label for="waitmode_period">Wait</label><span style=" margin-left:5px"><input class="times" name="times" type="text" id="wait_period" value="0" onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');"></span> seconds </li>
+							</ul>
+						</form>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<input type="button" id="playback_submit" class="submit left refresh" value="SUBMIT">
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div><div class="popup" id="contact_popup" style="width: 506px; margin-left: -253px; margin-top: -267px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div class="PopupConents" style="position:relative">
+					<div class="PopupLogo"><a href="#"><img src="inc/images/popups/allahs_quraan.png" alt="" title=""></a></div>
+					<div class="clear"></div>
+					<h2>CONTACT US</h2>
+					<div class="error">
+						You must enter your name
+					</div>
+					<div class="field">
+						<label>Full Name:<span class="required">*</span></label>
+						<input type="text" id="name" value="">
+					</div>
+					<div class="field">
+						<label>Email address:<span class="required">*</span></label>
+						<input type="text" id="email" value="">
+					</div>
+					<div class="field">
+						<label>Inquiry Issue:<span class="required">*</span></label>
+						<div class="PopupSelectBox" id="Container_InquiryIssue">
+							<span id="inquiry-issue" class="Value">Choose..</span>
+							<span class="SelectArrow Right"><a class="SmallArrow Right" href="#">Select</a></span>
+							<div class="optionsList" style="display: none;">
+								<ul>
+									<li><a href="#0">Choose..</a></li>
+									<li><a href="#1">General Inquiry</a></li>
+									<li><a href="#2">Report an Error</a></li>
+									<li><a href="#3">Suggestions</a></li>
+									<li><a href="#4">Other..</a></li>
+								</ul>
+							</div>
+						<input type="hidden" value="" id="InquiryIssue" name="InquiryIssue"></div>						
+					</div>
+					<div class="field">
+						<label>Subject:<span class="required">*</span></label>
+						<input type="text" id="subject" value="">
+					</div>
+					<div class="message">
+						<label>Message:<span class="required">*</span></label>
+						<em>Maximum 1000 Characters</em>
+						<div class="clear"></div>
+						<textarea id="message" maxlength="1000"></textarea>
+						<em class="charsRemaining">1000 characters remaining</em>
+					</div>
+					<div class="sec">
+						<input type="checkbox" class="contact_checkbox styled" id="contact_subscribe" name="subscribe" value="1" checked="checked"><label for="contact_subscribe">I wish to become a Share Islam member. It's free!</label>
+					</div>
+					<div class="sec"></div>
+					<div class="submit right">
+						<input type="button" id="contact_submit" class="submit display refresh" value="SUBMIT">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div>﻿<div class="popup" id="about_popup" style="width: 506px; margin-left: -253px; margin-top: -147px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div class="PopupConents" style="position:relative">
+					<div class="PopupLogo" style="padding-bottom:16px;"><a href="#"><img src="inc/images/popups/allahs_quraan.png" alt="" title=""></a></div>
+					<div class="clear"></div>
+					<div class="Tabs" style="margin-left:-12px;">
+						<ul>
+							<li><a class="tab Active" href="#" rel="about">ABOUT</a></li>
+							<li><a href="#" class="tab" rel="translations">TRANSLATIONS</a></li>
+							<li><a href="#" class="tab" rel="audio">AUDIO</a></li>
+							<li><a href="#" class="tab" rel="fonts">FONTS</a></li>
+						</ul>
+						<div class="clear"></div>
+						<div class="ShadwoLine"></div>
+					</div>
+					<div class="clear"></div>
+					<div id="about" class="tab" style="display:block">
+						<h2>ABOUT</h2>
+						<p>The AllahsQuran learn tool is provided by ShareIslam.com. Your questions or suggestions are welcomed. To report any mistake on the site, please <a class="popup_btn" href="#contact_popup">contact us</a>.</p>
+					</div>
+					<div id="translations" class="tab">
+						<h2>TRANSLATIONS</h2>
+						<p><strong>Word by Word</strong>: Compiled: Dr. Shehnaz Shaikh M.D. &amp; Ms. Kausar Khatri. Permission granted by Dr. Shehnaz Shaikh.</p>
+						<p><strong>Albanian</strong>:* Hasan Efendi Nahi</p>
+						<p><strong>Azerbaijani</strong>:* Alikhan Musayev</p>
+						<p><strong>Chinese</strong>: Ma Jian</p>
+						<p><strong>Dutch</strong>: Sofian S. Siregar</p>
+						<p><strong>English</strong>: Sahih International</p>
+						<p><strong>French</strong>:* Muhammad Hamidullah</p>
+												<p><strong>Persian</strong>:* Mohammad Mahdi Fooladvand</p>
+						<p><strong>Portuguese</strong>: Dr. Helmi Nasr</p>
+						<p><strong>Russian</strong>:* Elmir Kuliev</p>
+						<p><strong>Spanish</strong>: Abdel Ghani Melara Navio</p>
+						<p><strong>Swedish</strong>:* Knut Bernström</p>
+						<p><strong>Urdu</strong>:* Fateh Muhammad Jalandhry</p>
+						<div class="shadow"></div>
+						<p class="small">* Translations provided by Tanzil project.</p>
+					</div>
+					<div id="audio" class="tab">
+						<h2>AUDIO</h2>
+						<p>If you would like to help adding your own language, please <a class="popup_btn" href="#contact_popup">contact us</a></p>
+						<p><strong>Word by Word</strong>: Narrated by Imam Zia</p>
+						<p><strong>Albanian</strong>: Provided by kuranifisnik.net and prepared by ShareIslam.com team</p>
+						<p><strong>Azerbaijani</strong>: Narrated by Rasim Balayev. Provided and prepared by Huseyn Guliyev</p>
+						<p><strong>Chinese</strong>: Provided by norislam.com and prepared by ShareIslam.com team. Permission granted by noorislam.org</p>
+						<p><strong>Dutch</strong>: Narrated by Henny A.J. Kreeft. Prepared by ShareIslam.com team. All rights reserved to ShareIslam</p>
+						<p><strong>English</strong>: Narrated by Ibrahim Walk. Provided by versebyversequran.com</p>
+						<p><strong>French</strong>: Narrated by Youssouf Leclerc. Provided by the original publisher. Exclusive permission granted only to AllahsQuran by islamsavoirshop.com</p>
+												<p><strong>Persian</strong>: Narrated by Hidayatfar. Provided by ghorany.com</p>
+						<p><strong>Portuguese</strong>: Narrated by Alfredo Alves. Prepared by ShareIslam.com team. Provided by islamhouse.com</p>
+						
+						<p><strong>Spanish</strong>: Narrated by Noe Corrales. Provided by islamicbulletin.com. Exclusive permission granted only to AllahsQuran by original publisher</p>
+						<p><strong>Swedish</strong>: Narration done by Islamic Association of Sweden. Provided by the original publisher. Exclusive permission granted only to AllahsQuran by Islamic Association of Sweden</p>
+						<p><strong>Urdu</strong>: Narrated by Shamshad Ali Khan. Provided by qurandownload.com</p>
+					</div>
+					<div id="fonts" class="tab">
+						<h2>FONTS</h2>
+						<p><strong>PDMS Saleem - PakData</strong>: Font can be downloaded from <a href="http://pakdata.com/products/arabic-font-holy-quran" target="_blank">here</a>.</p>
+						<p><strong>Scheherazade - SIL International</strong>: Font can be downloaded from <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=arabicfonts" target="_blank">here</a>.</p>
+						<p><strong>Me Quran - Meor Ridzuan</strong>: Font can be downloaded from <a href="http://arabicfonts.wikispaces.com/" target="_blank">here</a>.</p>
+					</div>
+					<div class="clear" style="margin-bottom:36px;"></div>
+					<div class="submit right">
+						<input type="button" id="about_close" class="submit" value="CLOSE">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div><div id="group_popup" class="popup" style="width: 371px; margin-left: -185px; margin-top: -251px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div class="PopupConents">
+					<div class="PopupLogo"><img src="inc/images/popups/allahs_quraan.png" alt=""></div>
+					<div class="clear"></div>
+					<h2>GROUP</h2>
+					<div class="left">
+						<h3 style="margin-bottom:4px">CHOOSE YOUR VERSE RANGE</h3>
+						<div class="left">
+							<div class="number-selector" id="group_range_start">
+								<span class="value">1</span>
+								<ul>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="left" style="margin-left:10px">
+							<div class="number-selector" id="group_range_end">
+								<span class="value">1</span>
+								<ul>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3 style="margin-bottom:4px">DIVIDE YOUR RANGE INTO GROUPS</h3>
+						<p class="text" style="margin-right:10px">
+							Group every
+						</p>
+						<div class="left">
+							<div class="number-selector" id="group_divide">
+								<span class="value">1</span>
+								<ul>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="text" style="margin-left:10px">
+							verses together
+						</p>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>Repeat times</h3>
+						<p> Play each verse <span style="margin-left:11px"><input class="times" name="times" type="text" id="group_repeat_count" value="1" onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');"></span> times</p>
+						<p> Play each chapter <span><input class="times" name="times" type="text" id="group_repeat_chapters_count" value="1" onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');"></span> times</p>
+						<p> Play each range <span style="margin-left:9px"><input class="times" name="times" type="text" id="group_repeat_ranges_count" value="1" onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');"></span> times</p>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<div class="left">
+						<h3>AUTO PLAY</h3>
+						<form action="#" method="post">
+							<ul class="CheckList">
+								<li class="CheckList2"><span class="checkbox" id="chk_group_autoplay_verse" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="group_autoplay_verse" name="group_autoplay_verse" value="1"><label for="group_autoplay_verse">Next Verse</label></li>
+								<li class="CheckList2"><span class="checkbox" id="chk_group_autoplay_chapter" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="group_autoplay_chapter" name="group_autoplay_chapter" value="2"><label for="group_autoplay_chapter">Next Chapter</label></li>
+								<li class="CheckList2"><span class="checkbox" id="chk_group_autoplay_range" style="background-position: 0px 0px;"></span><input type="checkbox" class="styled" id="group_autoplay_range" name="group_autoplay_range" value="2"><label for="group_autoplay_range">Next Range</label></li>
+							</ul>
+						</form>
+					</div>
+					<div class="clear"></div>
+					<div class="grid"></div>
+					<input type="button" id="group_submit" class="submit left refresh" value="SUBMIT">
+					<a href="#" class="submitlink">Reset settings</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div><div id="font_popup" class="popup" style="width: 371px; margin-left: -185px; margin-top: -102px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div style="position: relative;" class="PopupConents">
+					<div class="PopupLogo"><a href="#"><img title="" alt="" src="inc/images/popups/allahs_quraan.png"></a></div>
+					<div class="clear"></div>
+					<div class="left">
+						<h3>DOWNLOAD THIS FILE AND RIGHT CLICK AND CLICK INSTALL. YOU MAY NEED TO CLOSE AND REOPEN YOUR BROWSER TO SEE THE FONT.<br><br></h3>
+					
+					</div>
+					<div class="clear"></div>
+					<input type="button" value="Download" class="submit left" id="download_font" onclick="location.href='/learn/inc/fonts/PDMS_Saleem_QuranFont.ttf';" style="display:none">
+					<input type="button" value="Download" class="submit left" id="download_font1" onclick="location.href='/learn/inc/fonts/ScheherazadeRegOT.ttf';" style="display:none">
+					<input type="button" value="Download" style="display:none" class="submit left" id="download_font2" onclick="location.href='/learn/inc/fonts/me_quran_volt_newmet.ttf';">
+ 					<input type="button" style="margin-left: 50px;" value="Cancel" class="submit left" id="cancel">
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div><div id="tooltip">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr class="t"><td class="l"></td><td class="c" colspan="3"></td><td class="r"></td></tr>
+		<tr class="m"><td class="l"></td><td class="c" colspan="3" id="tiptext">Vote Down</td><td class="r"></td></tr>
+		<tr class="b"><td class="l"></td><td class="s"></td><td class="p"></td><td class="c">&nbsp;</td><td class="r"></td></tr>
+	</tbody></table>
+</div><div id="message_popup" class="popup" style="width: 371px; margin-left: -185px; margin-top: -70px;">
+	<div class="shadowTitle">
+		<div class="shadowbox_nav"><a class="shadowbox_nav_close"></a></div>
+	</div>
+	<div class="shadowbox_box">
+		<div class="shadowbox_clear"></div>
+		<div class="shadowbox_body">
+			<div class="shadowbox_body_inner">
+				<div style="position:relative; background:none;" class="PopupConents">
+					<div class="clear"></div>
+					<div>
+						<h3 align="center"><br><span id="message-text">Message</span><br></h3>
+					</div>
+					<div class="clear"></div>
+					<div align="center" style="margin-top:10px;">
+						<input type="button" id="message_submit" class="submit" value="CLOSE">
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadowbox_clear"></div>
+</div>    
+<div id="apx" style="position:absolute; top:87px; left:403px"><div id="aya_player_wrapper" style="position: relative; width: 1px; height: 1px;"><object type="application/x-shockwave-flash" data="inc/flash/player/player2.swf" width="100%" height="100%" bgcolor="#000000" id="aya_player" name="aya_player" tabindex="0"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=http%3A%2F%2Fallahsquran.com%2Flearn%2F&amp;id=aya_player&amp;movie=inc%2Fflash%2Fplayer%2Fplayer2.swf&amp;bufferlength=60&amp;autostart=false&amp;screencolor=FFFFFF&amp;controlbar.position=over"></object></div></div><div id="lpx" style="position:absolute; top:87px; left:403px"><div id="preloader_wrapper" style="position: relative; width: 1px; height: 1px;"><object type="application/x-shockwave-flash" data="inc/flash/player/player2.swf" width="100%" height="100%" bgcolor="#000000" id="preloader" name="preloader" tabindex="0"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=http%3A%2F%2Fallahsquran.com%2Flearn%2F&amp;id=preloader&amp;movie=inc%2Fflash%2Fplayer%2Fplayer2.swf&amp;bufferlength=600&amp;screencolor=FFFFFF&amp;autostart=false&amp;controlbar.position=over"></object></div></div><div id="wp" style="position:absolute; top:87px; left:403px"><div id="wbw_player_wrapper" style="position: relative; width: 1px; height: 1px;"><object type="application/x-shockwave-flash" data="inc/flash/player/player.swf" width="100%" height="100%" bgcolor="#000000" id="wbw_player" name="wbw_player" tabindex="0"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=http%3A%2F%2Fallahsquran.com%2Flearn%2F&amp;id=wbw_player&amp;autostart=false&amp;screencolor=FFFFFF&amp;controlbar.position=over"></object></div></div></body></html>

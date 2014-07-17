@@ -1,0 +1,1278 @@
+updating data for 055.txt..<pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Ar-Rahman'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'The Most Gracious'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'The Most Gracious'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلرَّحْمَـٰنُ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #1'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He taught'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَلَّمَ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #2'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the Quran.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْقُرْءَانَ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #2'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He created'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'خَلَقَ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #3'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'[the] man.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْإِنسَـٰنَ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #3'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He taught him'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَلَّمَهُ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #4'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'[the] speech.'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْبَيَانَ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #4'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'The sun'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلشَّمْسُ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the moon'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْقَمَرُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'by (precise) calculation,'</font> <i>(length=25)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِحُسْبَانٍ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And the stars'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلنَّجْمُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #6'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the trees'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلشَّجَرُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #6'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'both prostrate.'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَسْجُدَانِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #6'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And the heaven,'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلسَّمَآءَ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #7'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He raised it'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَفَعَهَا'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #7'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and He has set up'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَوَضَعَ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #7'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the balance,'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمِيزَانَ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #7'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'That not'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'أَلَّا'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #8'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'you may transgress'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تَطْغَوْاْ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #8'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'in'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #8'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the balance.'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمِيزَانِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #8'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And establish'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَأَقِيمُواْ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #9'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the weight'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْوَزْنَ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #9'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'in justice'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِٱلْقِسْطِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #9'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and (do) not'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَلَا'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #9'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'make deficient'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُخْسِرُواْ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #9'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the balance.'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمِيزَانَ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #9'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And the earth,'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْأَرْضَ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #10'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He laid it'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَضَعَهَا'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #10'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'for the creatures,'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لِلْأَنَامِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #10'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Therein'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهَا'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #11'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) fruit'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَـٰكِهَةٌ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #11'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and date-palms'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلنَّخْلُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #11'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'having'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ذَاتُ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #11'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'sheaths,'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْأَكْمَامِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #11'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And the grain'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْحَبُّ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #12'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'having'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ذُو'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #12'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'husk'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْعَصْفِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #12'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and scented plants.'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلرَّيْحَانُ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #12'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #13'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #13'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #13'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #13'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He created'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'خَلَقَ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #14'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the man'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْإِنسَـٰنَ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #14'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'from'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #14'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'clay'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'صَلْصَـٰلٍ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #14'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'like the pottery.'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كَٱلْفَخَّارِ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #14'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And He created'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَخَلَقَ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #15'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the jinn'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجَآنَّ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #15'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'from'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #15'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'a smokeless flame'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَّارِجٍ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #15'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'of'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِّن'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #15'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'fire.'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'نَّارٍ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #15'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #16'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #16'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #16'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #16'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Lord'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبُّ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #17'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) the two Easts'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمَشْرِقَيْنِ'</font> <i>(length=30)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #17'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and Lord'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَرَبُّ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #17'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) the two Wests.'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمَغْرِبَيْنِ'</font> <i>(length=30)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #17'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #18'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #18'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #18'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #18'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He released'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَرَجَ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #19'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the two seas,'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْبَحْرَيْنِ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #19'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'meeting.'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَلْتَقِيَانِ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #19'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Between both of them'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بَيْنَهُمَا'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #20'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) a barrier,'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بَرْزَخٌ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #20'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'not'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لَّا'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #20'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'they transgress.'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَبْغِيَانِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #20'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #21'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #21'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #21'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #21'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Come forth'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَخْرُجُ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #22'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'from both of them'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِنْهُمَا'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #22'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the pearl'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱللُّؤْلُؤُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #22'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the coral.'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْمَرْجَانُ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #22'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #23'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #23'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #23'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #23'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'And for Him'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَلَهُ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #24'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) the ships'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجَوَارِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #24'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'elevated'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمُنشَـَٔـاتُ'</font> <i>(length=30)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #24'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'in'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #24'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the sea'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْبَحْرِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #24'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'like mountains.'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كَٱلْأَعْلَـٰمِ'</font> <i>(length=30)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #24'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #25'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #25'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #25'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #25'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Everyone'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كُلُّ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #26'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'who'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَنْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #26'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) on it'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَلَيْهَا'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #26'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(will) perish.'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَانٍ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #26'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'But will remain'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَيَبْقَىٰ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #27'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) Face'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَجْهُ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #27'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord,'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكَ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #27'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) Owner'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ذُو'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #27'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) Majesty'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجَلَـٰلِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #27'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and Honor.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْإِكْرَامِ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #27'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #28'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #28'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #28'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #28'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Asks Him'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَسْــَٔلُهُۥ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'whoever'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) in'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the heavens'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلسَّمَـٰوَٲتِ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the earth.'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْأَرْضِۚ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Every'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كُلَّ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'day'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَوْمٍ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'He'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'هُوَ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) in'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'a matter.'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'شَأْنٍ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #29'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #30'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #30'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #30'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #30'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Soon We will attend'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'سَنَفْرُغُ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #31'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'to you,'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لَكُمْ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #31'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'O you'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'أَيُّهَ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #31'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'two classes!'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلثَّقَلَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #31'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #32'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #32'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #32'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #32'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'O assembly'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَـٰمَعْشَرَ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) the jinn'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجِنِّ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the men!'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْإِنسِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'If'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِنِ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'you are able'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱسْتَطَعْتُمْ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'to'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'أَن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'pass beyond'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تَنفُذُواْ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'[of]'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِنْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) regions'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'أَقْطَارِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) the heavens'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلسَّمَـٰوَٲتِ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the earth,'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْأَرْضِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'then pass.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَٱنفُذُواْۚ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Not'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لَا'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'you (can) pass'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تَنفُذُونَ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'except'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِلَّا'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'by authority.'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِسُلْطَـٰنٍ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #33'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #34'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #34'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #34'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #34'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Will be sent'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يُرْسَلُ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'against both of you'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَلَيْكُمَا'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'a flame'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'شُوَاظٌ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'of'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِّن'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'fire'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'نَّارٍ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and smoke,'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَنُحَاسٌ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and not'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَلَا'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'you will (be able to) defend yourselves.'</font> <i>(length=40)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تَنتَصِرَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #35'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #36'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #36'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #36'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #36'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Then when'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَإِذَا'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #37'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'is split'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱنشَقَّتِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #37'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the heaven,'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلسَّمَآءُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #37'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and it becomes'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَكَانَتْ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #37'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'rose-colored'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَرْدَةً'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #37'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'like murky oil.'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كَٱلدِّهَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #37'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #38'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #38'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #38'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #38'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Then on that Day'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَيَوْمَئِذٍ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'not'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لَّا'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will be asked'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يُسْــَٔلُ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'about'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'his sin'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ذَنۢبِهِۦٓ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'any man'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِنسٌ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and not'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَلَا'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'any jinn.'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَآنٌّ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #39'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #40'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #40'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #40'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #40'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Will be known'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يُعْرَفُ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #41'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the criminals'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمُجْرِمُونَ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #41'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'by their marks'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِسِيمَـٰهُمْ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #41'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and will be seized'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَيُؤْخَذُ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #41'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'by the forelocks'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِٱلنَّوَٲصِى'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #41'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and the feet.'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْأَقْدَامِ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #41'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #42'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #42'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #42'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #42'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'This'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'هَـٰذِهِۦ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #43'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) Hell'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَهَنَّمُ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #43'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'which'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلَّتِى'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #43'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'deny'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يُكَذِّبُ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #43'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'[of it]'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِهَا'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #43'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the criminals.'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْمُجْرِمُونَ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #43'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'They will go around'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَطُوفُونَ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #44'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'between it'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بَيْنَهَا'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #44'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and between'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَبَيْنَ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #44'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'scalding water,'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'حَمِيمٍ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #44'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'heated.'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَانٍ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #44'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #45'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #45'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #45'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #45'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'But for (him) who'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَلِمَنْ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #46'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'fears'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'خَافَ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #46'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) standing'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَقَامَ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #46'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(before) his Lord'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّهِۦ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #46'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) two gardens.'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَنَّتَانِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #46'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #47'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #47'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #47'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #47'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Having'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ذَوَاتَآ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #48'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'branches.'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'أَفْنَانٍ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #48'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #49'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #49'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #49'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #49'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'In both of them'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهِمَا'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #50'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) two springs,'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَيْنَانِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #50'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'flowing.'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تَجْرِيَانِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #50'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #51'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #51'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #51'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #51'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'In both of them'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهِمَا'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #52'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'[of]'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #52'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) every'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كُلِّ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #52'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'fruits'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَـٰكِهَةٍ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #52'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(in) pairs.'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'زَوْجَانِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #52'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #53'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #53'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #53'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #53'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Reclining'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مُتَّكِــِٔينَ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'on'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَلَىٰ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'couches,'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فُرُشِۭ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(whose) inner linings'</font> <i>(length=21)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بَطَآئِنُهَا'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) of'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِنْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'brocade,'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِسْتَبْرَقٍۚ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and (the) fruit'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَجَنَى'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) both the gardens'</font> <i>(length=21)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجَنَّتَيْنِ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(is) near.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'دَانٍ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #54'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #55'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #55'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #55'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #55'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'In them'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهِنَّ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(will be) companions of modest gaze'</font> <i>(length=35)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'قَـٰصِرَٲتُ ٱلطَّرْفِ'</font> <i>(length=41)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'not'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لَمْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'has touched them'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَطْمِثْهُنَّ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'any man'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِنسٌ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'before them'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'قَبْلَهُمْ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and not'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَلَا'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'any jinn.'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَآنٌّ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #56'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #57'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #57'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #57'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #57'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'As if they were'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'كَأَنَّهُنَّ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #58'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'rubies'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْيَاقُوتُ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #58'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and coral.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْمَرْجَانُ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #58'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #59'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #59'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #59'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #59'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Is'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'هَلْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #60'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) reward'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَزَآءُ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #60'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'for the good'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْإِحْسَـٰنِ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #60'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'but'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِلَّا'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #60'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'good?'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْإِحْسَـٰنُ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #60'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #61'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #61'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #61'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #61'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Besides these two'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَمِن دُونِهِمَا'</font> <i>(length=31)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #62'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) two gardens.'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَنَّتَانِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #62'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #63'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #63'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #63'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #63'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Dark green.'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مُدْهَآمَّتَانِ'</font> <i>(length=32)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #64'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #65'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #65'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #65'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #65'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'In both of them'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهِمَا'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #66'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) two springs,'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَيْنَانِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #66'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'gushing forth.'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'نَضَّاخَتَانِ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #66'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #67'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #67'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #67'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #67'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'In both of them'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهِمَا'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #68'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) fruits'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَـٰكِهَةٌ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #68'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and date-palms'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَنَخْلٌ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #68'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and pomegranates.'</font> <i>(length=17)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَرُمَّانٌ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #68'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #69'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #69'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #69'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #69'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'In them'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِيهِنَّ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #70'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(are) good'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'خَيْرَٲتٌ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #70'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and beautiful ones.'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'حِسَانٌ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #70'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #71'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #71'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #71'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #71'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Fair ones'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'حُورٌ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #72'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'restrained'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَّقْصُورَٲتٌ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #72'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'in'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #72'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the pavilions.'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْخِيَامِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #72'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #73'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #73'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #73'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #73'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Not'</font> <i>(length=3)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'لَمْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #74'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'has touched them'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يَطْمِثْهُنَّ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #74'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'any man'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِنسٌ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #74'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'before them'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'قَبْلَهُمْ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #74'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and not'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَلَا'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #74'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'any jinn.'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'جَآنٌّ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #74'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #75'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #75'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #75'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #75'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Reclining'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مُتَّكِــِٔينَ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #76'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'on'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'عَلَىٰ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #76'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'cushions'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَفْرَفٍ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #76'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'green,'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'خُضْرٍ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #76'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and carpets'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَعَبْقَرِىٍّ'</font> <i>(length=26)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #76'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'beautiful.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'حِسَانٍ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #76'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'So which'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فَبِأَىِّ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #77'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of the) favors'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ءَالَآءِ'</font> <i>(length=18)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #77'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكُمَا'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #77'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'will you both deny?'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تُكَذِّبَانِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #77'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Blessed is'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'تَبَـٰرَكَ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #78'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) name'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱسْمُ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #78'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) your Lord,'</font> <i>(length=15)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'رَبِّكَ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #78'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Owner'</font> <i>(length=5)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ذِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #78'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) Majesty'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجَلَـٰلِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #78'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and Honor.'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلْإِكْرَامِ'</font> <i>(length=28)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #78'</font> <i>(length=8)</i>
+</pre>	<p><a href="?action=update_data&filename=001.txt">Get data for 001.txt</a> 
+	<a href="?action=generate_images&filename=001.txt">Generate images for 001.txt</a> </p>
+		<p><a href="?action=update_data&filename=002.txt">Get data for 002.txt</a> 
+	<a href="?action=generate_images&filename=002.txt">Generate images for 002.txt</a> </p>
+		<p><a href="?action=update_data&filename=003.txt">Get data for 003.txt</a> 
+	<a href="?action=generate_images&filename=003.txt">Generate images for 003.txt</a> </p>
+		<p><a href="?action=update_data&filename=004.txt">Get data for 004.txt</a> 
+	<a href="?action=generate_images&filename=004.txt">Generate images for 004.txt</a> </p>
+		<p><a href="?action=update_data&filename=005.txt">Get data for 005.txt</a> 
+	<a href="?action=generate_images&filename=005.txt">Generate images for 005.txt</a> </p>
+		<p><a href="?action=update_data&filename=006.txt">Get data for 006.txt</a> 
+	<a href="?action=generate_images&filename=006.txt">Generate images for 006.txt</a> </p>
+		<p><a href="?action=update_data&filename=007.txt">Get data for 007.txt</a> 
+	<a href="?action=generate_images&filename=007.txt">Generate images for 007.txt</a> </p>
+		<p><a href="?action=update_data&filename=008.txt">Get data for 008.txt</a> 
+	<a href="?action=generate_images&filename=008.txt">Generate images for 008.txt</a> </p>
+		<p><a href="?action=update_data&filename=009.txt">Get data for 009.txt</a> 
+	<a href="?action=generate_images&filename=009.txt">Generate images for 009.txt</a> </p>
+		<p><a href="?action=update_data&filename=010.txt">Get data for 010.txt</a> 
+	<a href="?action=generate_images&filename=010.txt">Generate images for 010.txt</a> </p>
+		<p><a href="?action=update_data&filename=011.txt">Get data for 011.txt</a> 
+	<a href="?action=generate_images&filename=011.txt">Generate images for 011.txt</a> </p>
+		<p><a href="?action=update_data&filename=012.txt">Get data for 012.txt</a> 
+	<a href="?action=generate_images&filename=012.txt">Generate images for 012.txt</a> </p>
+		<p><a href="?action=update_data&filename=013.txt">Get data for 013.txt</a> 
+	<a href="?action=generate_images&filename=013.txt">Generate images for 013.txt</a> </p>
+		<p><a href="?action=update_data&filename=014.txt">Get data for 014.txt</a> 
+	<a href="?action=generate_images&filename=014.txt">Generate images for 014.txt</a> </p>
+		<p><a href="?action=update_data&filename=015.txt">Get data for 015.txt</a> 
+	<a href="?action=generate_images&filename=015.txt">Generate images for 015.txt</a> </p>
+		<p><a href="?action=update_data&filename=016.txt">Get data for 016.txt</a> 
+	<a href="?action=generate_images&filename=016.txt">Generate images for 016.txt</a> </p>
+		<p><a href="?action=update_data&filename=017.txt">Get data for 017.txt</a> 
+	<a href="?action=generate_images&filename=017.txt">Generate images for 017.txt</a> </p>
+		<p><a href="?action=update_data&filename=018.txt">Get data for 018.txt</a> 
+	<a href="?action=generate_images&filename=018.txt">Generate images for 018.txt</a> </p>
+		<p><a href="?action=update_data&filename=019.txt">Get data for 019.txt</a> 
+	<a href="?action=generate_images&filename=019.txt">Generate images for 019.txt</a> </p>
+		<p><a href="?action=update_data&filename=020.txt">Get data for 020.txt</a> 
+	<a href="?action=generate_images&filename=020.txt">Generate images for 020.txt</a> </p>
+		<p><a href="?action=update_data&filename=021.txt">Get data for 021.txt</a> 
+	<a href="?action=generate_images&filename=021.txt">Generate images for 021.txt</a> </p>
+		<p><a href="?action=update_data&filename=022.txt">Get data for 022.txt</a> 
+	<a href="?action=generate_images&filename=022.txt">Generate images for 022.txt</a> </p>
+		<p><a href="?action=update_data&filename=023.txt">Get data for 023.txt</a> 
+	<a href="?action=generate_images&filename=023.txt">Generate images for 023.txt</a> </p>
+		<p><a href="?action=update_data&filename=024.txt">Get data for 024.txt</a> 
+	<a href="?action=generate_images&filename=024.txt">Generate images for 024.txt</a> </p>
+		<p><a href="?action=update_data&filename=025.txt">Get data for 025.txt</a> 
+	<a href="?action=generate_images&filename=025.txt">Generate images for 025.txt</a> </p>
+		<p><a href="?action=update_data&filename=026.txt">Get data for 026.txt</a> 
+	<a href="?action=generate_images&filename=026.txt">Generate images for 026.txt</a> </p>
+		<p><a href="?action=update_data&filename=027.txt">Get data for 027.txt</a> 
+	<a href="?action=generate_images&filename=027.txt">Generate images for 027.txt</a> </p>
+		<p><a href="?action=update_data&filename=028.txt">Get data for 028.txt</a> 
+	<a href="?action=generate_images&filename=028.txt">Generate images for 028.txt</a> </p>
+		<p><a href="?action=update_data&filename=029.txt">Get data for 029.txt</a> 
+	<a href="?action=generate_images&filename=029.txt">Generate images for 029.txt</a> </p>
+		<p><a href="?action=update_data&filename=030.txt">Get data for 030.txt</a> 
+	<a href="?action=generate_images&filename=030.txt">Generate images for 030.txt</a> </p>
+		<p><a href="?action=update_data&filename=031.txt">Get data for 031.txt</a> 
+	<a href="?action=generate_images&filename=031.txt">Generate images for 031.txt</a> </p>
+		<p><a href="?action=update_data&filename=032.txt">Get data for 032.txt</a> 
+	<a href="?action=generate_images&filename=032.txt">Generate images for 032.txt</a> </p>
+		<p><a href="?action=update_data&filename=033.txt">Get data for 033.txt</a> 
+	<a href="?action=generate_images&filename=033.txt">Generate images for 033.txt</a> </p>
+		<p><a href="?action=update_data&filename=034.txt">Get data for 034.txt</a> 
+	<a href="?action=generate_images&filename=034.txt">Generate images for 034.txt</a> </p>
+		<p><a href="?action=update_data&filename=035.txt">Get data for 035.txt</a> 
+	<a href="?action=generate_images&filename=035.txt">Generate images for 035.txt</a> </p>
+		<p><a href="?action=update_data&filename=036.txt">Get data for 036.txt</a> 
+	<a href="?action=generate_images&filename=036.txt">Generate images for 036.txt</a> </p>
+		<p><a href="?action=update_data&filename=037.txt">Get data for 037.txt</a> 
+	<a href="?action=generate_images&filename=037.txt">Generate images for 037.txt</a> </p>
+		<p><a href="?action=update_data&filename=038.txt">Get data for 038.txt</a> 
+	<a href="?action=generate_images&filename=038.txt">Generate images for 038.txt</a> </p>
+		<p><a href="?action=update_data&filename=039.txt">Get data for 039.txt</a> 
+	<a href="?action=generate_images&filename=039.txt">Generate images for 039.txt</a> </p>
+		<p><a href="?action=update_data&filename=040.txt">Get data for 040.txt</a> 
+	<a href="?action=generate_images&filename=040.txt">Generate images for 040.txt</a> </p>
+		<p><a href="?action=update_data&filename=041.txt">Get data for 041.txt</a> 
+	<a href="?action=generate_images&filename=041.txt">Generate images for 041.txt</a> </p>
+		<p><a href="?action=update_data&filename=042.txt">Get data for 042.txt</a> 
+	<a href="?action=generate_images&filename=042.txt">Generate images for 042.txt</a> </p>
+		<p><a href="?action=update_data&filename=043.txt">Get data for 043.txt</a> 
+	<a href="?action=generate_images&filename=043.txt">Generate images for 043.txt</a> </p>
+		<p><a href="?action=update_data&filename=044.txt">Get data for 044.txt</a> 
+	<a href="?action=generate_images&filename=044.txt">Generate images for 044.txt</a> </p>
+		<p><a href="?action=update_data&filename=045.txt">Get data for 045.txt</a> 
+	<a href="?action=generate_images&filename=045.txt">Generate images for 045.txt</a> </p>
+		<p><a href="?action=update_data&filename=046.txt">Get data for 046.txt</a> 
+	<a href="?action=generate_images&filename=046.txt">Generate images for 046.txt</a> </p>
+		<p><a href="?action=update_data&filename=047.txt">Get data for 047.txt</a> 
+	<a href="?action=generate_images&filename=047.txt">Generate images for 047.txt</a> </p>
+		<p><a href="?action=update_data&filename=048.txt">Get data for 048.txt</a> 
+	<a href="?action=generate_images&filename=048.txt">Generate images for 048.txt</a> </p>
+		<p><a href="?action=update_data&filename=049.txt">Get data for 049.txt</a> 
+	<a href="?action=generate_images&filename=049.txt">Generate images for 049.txt</a> </p>
+		<p><a href="?action=update_data&filename=050.txt">Get data for 050.txt</a> 
+	<a href="?action=generate_images&filename=050.txt">Generate images for 050.txt</a> </p>
+		<p><a href="?action=update_data&filename=051.txt">Get data for 051.txt</a> 
+	<a href="?action=generate_images&filename=051.txt">Generate images for 051.txt</a> </p>
+		<p><a href="?action=update_data&filename=052.txt">Get data for 052.txt</a> 
+	<a href="?action=generate_images&filename=052.txt">Generate images for 052.txt</a> </p>
+		<p><a href="?action=update_data&filename=053.txt">Get data for 053.txt</a> 
+	<a href="?action=generate_images&filename=053.txt">Generate images for 053.txt</a> </p>
+		<p><a href="?action=update_data&filename=054.txt">Get data for 054.txt</a> 
+	<a href="?action=generate_images&filename=054.txt">Generate images for 054.txt</a> </p>
+		<p><a href="?action=update_data&filename=055.txt">Get data for 055.txt</a> 
+	<a href="?action=generate_images&filename=055.txt">Generate images for 055.txt</a> </p>
+		<p><a href="?action=update_data&filename=056.txt">Get data for 056.txt</a> 
+	<a href="?action=generate_images&filename=056.txt">Generate images for 056.txt</a> </p>
+		<p><a href="?action=update_data&filename=057.txt">Get data for 057.txt</a> 
+	<a href="?action=generate_images&filename=057.txt">Generate images for 057.txt</a> </p>
+		<p><a href="?action=update_data&filename=058.txt">Get data for 058.txt</a> 
+	<a href="?action=generate_images&filename=058.txt">Generate images for 058.txt</a> </p>
+		<p><a href="?action=update_data&filename=059.txt">Get data for 059.txt</a> 
+	<a href="?action=generate_images&filename=059.txt">Generate images for 059.txt</a> </p>
+		<p><a href="?action=update_data&filename=060.txt">Get data for 060.txt</a> 
+	<a href="?action=generate_images&filename=060.txt">Generate images for 060.txt</a> </p>
+		<p><a href="?action=update_data&filename=061.txt">Get data for 061.txt</a> 
+	<a href="?action=generate_images&filename=061.txt">Generate images for 061.txt</a> </p>
+		<p><a href="?action=update_data&filename=062.txt">Get data for 062.txt</a> 
+	<a href="?action=generate_images&filename=062.txt">Generate images for 062.txt</a> </p>
+		<p><a href="?action=update_data&filename=063.txt">Get data for 063.txt</a> 
+	<a href="?action=generate_images&filename=063.txt">Generate images for 063.txt</a> </p>
+		<p><a href="?action=update_data&filename=064.txt">Get data for 064.txt</a> 
+	<a href="?action=generate_images&filename=064.txt">Generate images for 064.txt</a> </p>
+		<p><a href="?action=update_data&filename=065.txt">Get data for 065.txt</a> 
+	<a href="?action=generate_images&filename=065.txt">Generate images for 065.txt</a> </p>
+		<p><a href="?action=update_data&filename=066.txt">Get data for 066.txt</a> 
+	<a href="?action=generate_images&filename=066.txt">Generate images for 066.txt</a> </p>
+		<p><a href="?action=update_data&filename=067.txt">Get data for 067.txt</a> 
+	<a href="?action=generate_images&filename=067.txt">Generate images for 067.txt</a> </p>
+		<p><a href="?action=update_data&filename=068.txt">Get data for 068.txt</a> 
+	<a href="?action=generate_images&filename=068.txt">Generate images for 068.txt</a> </p>
+		<p><a href="?action=update_data&filename=069.txt">Get data for 069.txt</a> 
+	<a href="?action=generate_images&filename=069.txt">Generate images for 069.txt</a> </p>
+		<p><a href="?action=update_data&filename=070.txt">Get data for 070.txt</a> 
+	<a href="?action=generate_images&filename=070.txt">Generate images for 070.txt</a> </p>
+		<p><a href="?action=update_data&filename=071.txt">Get data for 071.txt</a> 
+	<a href="?action=generate_images&filename=071.txt">Generate images for 071.txt</a> </p>
+		<p><a href="?action=update_data&filename=072.txt">Get data for 072.txt</a> 
+	<a href="?action=generate_images&filename=072.txt">Generate images for 072.txt</a> </p>
+		<p><a href="?action=update_data&filename=073.txt">Get data for 073.txt</a> 
+	<a href="?action=generate_images&filename=073.txt">Generate images for 073.txt</a> </p>
+		<p><a href="?action=update_data&filename=074.txt">Get data for 074.txt</a> 
+	<a href="?action=generate_images&filename=074.txt">Generate images for 074.txt</a> </p>
+		<p><a href="?action=update_data&filename=075.txt">Get data for 075.txt</a> 
+	<a href="?action=generate_images&filename=075.txt">Generate images for 075.txt</a> </p>
+		<p><a href="?action=update_data&filename=076.txt">Get data for 076.txt</a> 
+	<a href="?action=generate_images&filename=076.txt">Generate images for 076.txt</a> </p>
+		<p><a href="?action=update_data&filename=077.txt">Get data for 077.txt</a> 
+	<a href="?action=generate_images&filename=077.txt">Generate images for 077.txt</a> </p>
+		<p><a href="?action=update_data&filename=078.txt">Get data for 078.txt</a> 
+	<a href="?action=generate_images&filename=078.txt">Generate images for 078.txt</a> </p>
+		<p><a href="?action=update_data&filename=079.txt">Get data for 079.txt</a> 
+	<a href="?action=generate_images&filename=079.txt">Generate images for 079.txt</a> </p>
+		<p><a href="?action=update_data&filename=080.txt">Get data for 080.txt</a> 
+	<a href="?action=generate_images&filename=080.txt">Generate images for 080.txt</a> </p>
+		<p><a href="?action=update_data&filename=081.txt">Get data for 081.txt</a> 
+	<a href="?action=generate_images&filename=081.txt">Generate images for 081.txt</a> </p>
+		<p><a href="?action=update_data&filename=082.txt">Get data for 082.txt</a> 
+	<a href="?action=generate_images&filename=082.txt">Generate images for 082.txt</a> </p>
+		<p><a href="?action=update_data&filename=083.txt">Get data for 083.txt</a> 
+	<a href="?action=generate_images&filename=083.txt">Generate images for 083.txt</a> </p>
+		<p><a href="?action=update_data&filename=084.txt">Get data for 084.txt</a> 
+	<a href="?action=generate_images&filename=084.txt">Generate images for 084.txt</a> </p>
+		<p><a href="?action=update_data&filename=085.txt">Get data for 085.txt</a> 
+	<a href="?action=generate_images&filename=085.txt">Generate images for 085.txt</a> </p>
+		<p><a href="?action=update_data&filename=086.txt">Get data for 086.txt</a> 
+	<a href="?action=generate_images&filename=086.txt">Generate images for 086.txt</a> </p>
+		<p><a href="?action=update_data&filename=087.txt">Get data for 087.txt</a> 
+	<a href="?action=generate_images&filename=087.txt">Generate images for 087.txt</a> </p>
+		<p><a href="?action=update_data&filename=088.txt">Get data for 088.txt</a> 
+	<a href="?action=generate_images&filename=088.txt">Generate images for 088.txt</a> </p>
+		<p><a href="?action=update_data&filename=089.txt">Get data for 089.txt</a> 
+	<a href="?action=generate_images&filename=089.txt">Generate images for 089.txt</a> </p>
+		<p><a href="?action=update_data&filename=090.txt">Get data for 090.txt</a> 
+	<a href="?action=generate_images&filename=090.txt">Generate images for 090.txt</a> </p>
+		<p><a href="?action=update_data&filename=091.txt">Get data for 091.txt</a> 
+	<a href="?action=generate_images&filename=091.txt">Generate images for 091.txt</a> </p>
+		<p><a href="?action=update_data&filename=092.txt">Get data for 092.txt</a> 
+	<a href="?action=generate_images&filename=092.txt">Generate images for 092.txt</a> </p>
+		<p><a href="?action=update_data&filename=093.txt">Get data for 093.txt</a> 
+	<a href="?action=generate_images&filename=093.txt">Generate images for 093.txt</a> </p>
+		<p><a href="?action=update_data&filename=094.txt">Get data for 094.txt</a> 
+	<a href="?action=generate_images&filename=094.txt">Generate images for 094.txt</a> </p>
+		<p><a href="?action=update_data&filename=095.txt">Get data for 095.txt</a> 
+	<a href="?action=generate_images&filename=095.txt">Generate images for 095.txt</a> </p>
+		<p><a href="?action=update_data&filename=096.txt">Get data for 096.txt</a> 
+	<a href="?action=generate_images&filename=096.txt">Generate images for 096.txt</a> </p>
+		<p><a href="?action=update_data&filename=097.txt">Get data for 097.txt</a> 
+	<a href="?action=generate_images&filename=097.txt">Generate images for 097.txt</a> </p>
+		<p><a href="?action=update_data&filename=098.txt">Get data for 098.txt</a> 
+	<a href="?action=generate_images&filename=098.txt">Generate images for 098.txt</a> </p>
+		<p><a href="?action=update_data&filename=099.txt">Get data for 099.txt</a> 
+	<a href="?action=generate_images&filename=099.txt">Generate images for 099.txt</a> </p>
+		<p><a href="?action=update_data&filename=100.txt">Get data for 100.txt</a> 
+	<a href="?action=generate_images&filename=100.txt">Generate images for 100.txt</a> </p>
+		<p><a href="?action=update_data&filename=101.txt">Get data for 101.txt</a> 
+	<a href="?action=generate_images&filename=101.txt">Generate images for 101.txt</a> </p>
+		<p><a href="?action=update_data&filename=102.txt">Get data for 102.txt</a> 
+	<a href="?action=generate_images&filename=102.txt">Generate images for 102.txt</a> </p>
+		<p><a href="?action=update_data&filename=103.txt">Get data for 103.txt</a> 
+	<a href="?action=generate_images&filename=103.txt">Generate images for 103.txt</a> </p>
+		<p><a href="?action=update_data&filename=104.txt">Get data for 104.txt</a> 
+	<a href="?action=generate_images&filename=104.txt">Generate images for 104.txt</a> </p>
+		<p><a href="?action=update_data&filename=105.txt">Get data for 105.txt</a> 
+	<a href="?action=generate_images&filename=105.txt">Generate images for 105.txt</a> </p>
+		<p><a href="?action=update_data&filename=106.txt">Get data for 106.txt</a> 
+	<a href="?action=generate_images&filename=106.txt">Generate images for 106.txt</a> </p>
+		<p><a href="?action=update_data&filename=107.txt">Get data for 107.txt</a> 
+	<a href="?action=generate_images&filename=107.txt">Generate images for 107.txt</a> </p>
+		<p><a href="?action=update_data&filename=108.txt">Get data for 108.txt</a> 
+	<a href="?action=generate_images&filename=108.txt">Generate images for 108.txt</a> </p>
+		<p><a href="?action=update_data&filename=109.txt">Get data for 109.txt</a> 
+	<a href="?action=generate_images&filename=109.txt">Generate images for 109.txt</a> </p>
+		<p><a href="?action=update_data&filename=110.txt">Get data for 110.txt</a> 
+	<a href="?action=generate_images&filename=110.txt">Generate images for 110.txt</a> </p>
+		<p><a href="?action=update_data&filename=111.txt">Get data for 111.txt</a> 
+	<a href="?action=generate_images&filename=111.txt">Generate images for 111.txt</a> </p>
+		<p><a href="?action=update_data&filename=112.txt">Get data for 112.txt</a> 
+	<a href="?action=generate_images&filename=112.txt">Generate images for 112.txt</a> </p>
+		<p><a href="?action=update_data&filename=113.txt">Get data for 113.txt</a> 
+	<a href="?action=generate_images&filename=113.txt">Generate images for 113.txt</a> </p>
+		<p><a href="?action=update_data&filename=114.txt">Get data for 114.txt</a> 
+	<a href="?action=generate_images&filename=114.txt">Generate images for 114.txt</a> </p>
+	

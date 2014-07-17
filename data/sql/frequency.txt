@@ -1,0 +1,4 @@
+SELECT COUNT(wordId), word, english
+FROM words
+GROUP BY word
+ORDER BY COUNT(wordId) desc

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>word2uni Example</title>
+		<script type="text/javascript">
+			function change_image()
+			{
+				document.getElementById("image").src = 'image.php?word='+document.getElementById("word").value
+			}
+		</script>
+	</head>
+	<body>
+
+			<input type="text" id="word">
+			<input type="button" onclick="change_image()" value="غير">
+			<br>
+			<img src="image.php" id="image">
+	</body>
+	
+</html>

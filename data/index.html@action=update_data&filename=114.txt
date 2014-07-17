@@ -1,0 +1,291 @@
+updating data for 114.txt..<pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'An-Nas'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Mankind'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'Say,'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'قُلْ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #1'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'`I seek refuge'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'أَعُوذُ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #1'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'in (the) Lord'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'بِرَبِّ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #1'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) mankind,'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلنَّاسِ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #1'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(The) King'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مَلِكِ'</font> <i>(length=12)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #2'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) mankind,'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلنَّاسِ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #2'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(The) God'</font> <i>(length=9)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'إِلَـٰهِ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #3'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) mankind,'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلنَّاسِ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #3'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'From'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِن'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #4'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) evil'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'شَرِّ'</font> <i>(length=10)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #4'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) the whisperer,'</font> <i>(length=19)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْوَسْوَاسِ'</font> <i>(length=24)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #4'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the one who withdraws,'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْخَنَّاسِ'</font> <i>(length=22)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #4'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'The one who'</font> <i>(length=11)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلَّذِى'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'whispers'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'يُوَسْوِسُ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'in'</font> <i>(length=2)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'فِى'</font> <i>(length=6)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(the) breasts'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'صُدُورِ'</font> <i>(length=14)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'(of) mankind,'</font> <i>(length=13)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلنَّاسِ'</font> <i>(length=16)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #5'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'From'</font> <i>(length=4)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'مِنَ'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #6'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'the jinn'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ٱلْجِنَّةِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #6'</font> <i>(length=7)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'and men.'</font> <i>(length=8)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'وَٱلنَّاسِ'</font> <i>(length=20)</i>
+</pre><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font color='#cc0000'>'ayah #6'</font> <i>(length=7)</i>
+</pre>	<p><a href="?action=update_data&filename=001.txt">Get data for 001.txt</a> 
+	<a href="?action=generate_images&filename=001.txt">Generate images for 001.txt</a> </p>
+		<p><a href="?action=update_data&filename=002.txt">Get data for 002.txt</a> 
+	<a href="?action=generate_images&filename=002.txt">Generate images for 002.txt</a> </p>
+		<p><a href="?action=update_data&filename=003.txt">Get data for 003.txt</a> 
+	<a href="?action=generate_images&filename=003.txt">Generate images for 003.txt</a> </p>
+		<p><a href="?action=update_data&filename=004.txt">Get data for 004.txt</a> 
+	<a href="?action=generate_images&filename=004.txt">Generate images for 004.txt</a> </p>
+		<p><a href="?action=update_data&filename=005.txt">Get data for 005.txt</a> 
+	<a href="?action=generate_images&filename=005.txt">Generate images for 005.txt</a> </p>
+		<p><a href="?action=update_data&filename=006.txt">Get data for 006.txt</a> 
+	<a href="?action=generate_images&filename=006.txt">Generate images for 006.txt</a> </p>
+		<p><a href="?action=update_data&filename=007.txt">Get data for 007.txt</a> 
+	<a href="?action=generate_images&filename=007.txt">Generate images for 007.txt</a> </p>
+		<p><a href="?action=update_data&filename=008.txt">Get data for 008.txt</a> 
+	<a href="?action=generate_images&filename=008.txt">Generate images for 008.txt</a> </p>
+		<p><a href="?action=update_data&filename=009.txt">Get data for 009.txt</a> 
+	<a href="?action=generate_images&filename=009.txt">Generate images for 009.txt</a> </p>
+		<p><a href="?action=update_data&filename=010.txt">Get data for 010.txt</a> 
+	<a href="?action=generate_images&filename=010.txt">Generate images for 010.txt</a> </p>
+		<p><a href="?action=update_data&filename=011.txt">Get data for 011.txt</a> 
+	<a href="?action=generate_images&filename=011.txt">Generate images for 011.txt</a> </p>
+		<p><a href="?action=update_data&filename=012.txt">Get data for 012.txt</a> 
+	<a href="?action=generate_images&filename=012.txt">Generate images for 012.txt</a> </p>
+		<p><a href="?action=update_data&filename=013.txt">Get data for 013.txt</a> 
+	<a href="?action=generate_images&filename=013.txt">Generate images for 013.txt</a> </p>
+		<p><a href="?action=update_data&filename=014.txt">Get data for 014.txt</a> 
+	<a href="?action=generate_images&filename=014.txt">Generate images for 014.txt</a> </p>
+		<p><a href="?action=update_data&filename=015.txt">Get data for 015.txt</a> 
+	<a href="?action=generate_images&filename=015.txt">Generate images for 015.txt</a> </p>
+		<p><a href="?action=update_data&filename=016.txt">Get data for 016.txt</a> 
+	<a href="?action=generate_images&filename=016.txt">Generate images for 016.txt</a> </p>
+		<p><a href="?action=update_data&filename=017.txt">Get data for 017.txt</a> 
+	<a href="?action=generate_images&filename=017.txt">Generate images for 017.txt</a> </p>
+		<p><a href="?action=update_data&filename=018.txt">Get data for 018.txt</a> 
+	<a href="?action=generate_images&filename=018.txt">Generate images for 018.txt</a> </p>
+		<p><a href="?action=update_data&filename=019.txt">Get data for 019.txt</a> 
+	<a href="?action=generate_images&filename=019.txt">Generate images for 019.txt</a> </p>
+		<p><a href="?action=update_data&filename=020.txt">Get data for 020.txt</a> 
+	<a href="?action=generate_images&filename=020.txt">Generate images for 020.txt</a> </p>
+		<p><a href="?action=update_data&filename=021.txt">Get data for 021.txt</a> 
+	<a href="?action=generate_images&filename=021.txt">Generate images for 021.txt</a> </p>
+		<p><a href="?action=update_data&filename=022.txt">Get data for 022.txt</a> 
+	<a href="?action=generate_images&filename=022.txt">Generate images for 022.txt</a> </p>
+		<p><a href="?action=update_data&filename=023.txt">Get data for 023.txt</a> 
+	<a href="?action=generate_images&filename=023.txt">Generate images for 023.txt</a> </p>
+		<p><a href="?action=update_data&filename=024.txt">Get data for 024.txt</a> 
+	<a href="?action=generate_images&filename=024.txt">Generate images for 024.txt</a> </p>
+		<p><a href="?action=update_data&filename=025.txt">Get data for 025.txt</a> 
+	<a href="?action=generate_images&filename=025.txt">Generate images for 025.txt</a> </p>
+		<p><a href="?action=update_data&filename=026.txt">Get data for 026.txt</a> 
+	<a href="?action=generate_images&filename=026.txt">Generate images for 026.txt</a> </p>
+		<p><a href="?action=update_data&filename=027.txt">Get data for 027.txt</a> 
+	<a href="?action=generate_images&filename=027.txt">Generate images for 027.txt</a> </p>
+		<p><a href="?action=update_data&filename=028.txt">Get data for 028.txt</a> 
+	<a href="?action=generate_images&filename=028.txt">Generate images for 028.txt</a> </p>
+		<p><a href="?action=update_data&filename=029.txt">Get data for 029.txt</a> 
+	<a href="?action=generate_images&filename=029.txt">Generate images for 029.txt</a> </p>
+		<p><a href="?action=update_data&filename=030.txt">Get data for 030.txt</a> 
+	<a href="?action=generate_images&filename=030.txt">Generate images for 030.txt</a> </p>
+		<p><a href="?action=update_data&filename=031.txt">Get data for 031.txt</a> 
+	<a href="?action=generate_images&filename=031.txt">Generate images for 031.txt</a> </p>
+		<p><a href="?action=update_data&filename=032.txt">Get data for 032.txt</a> 
+	<a href="?action=generate_images&filename=032.txt">Generate images for 032.txt</a> </p>
+		<p><a href="?action=update_data&filename=033.txt">Get data for 033.txt</a> 
+	<a href="?action=generate_images&filename=033.txt">Generate images for 033.txt</a> </p>
+		<p><a href="?action=update_data&filename=034.txt">Get data for 034.txt</a> 
+	<a href="?action=generate_images&filename=034.txt">Generate images for 034.txt</a> </p>
+		<p><a href="?action=update_data&filename=035.txt">Get data for 035.txt</a> 
+	<a href="?action=generate_images&filename=035.txt">Generate images for 035.txt</a> </p>
+		<p><a href="?action=update_data&filename=036.txt">Get data for 036.txt</a> 
+	<a href="?action=generate_images&filename=036.txt">Generate images for 036.txt</a> </p>
+		<p><a href="?action=update_data&filename=037.txt">Get data for 037.txt</a> 
+	<a href="?action=generate_images&filename=037.txt">Generate images for 037.txt</a> </p>
+		<p><a href="?action=update_data&filename=038.txt">Get data for 038.txt</a> 
+	<a href="?action=generate_images&filename=038.txt">Generate images for 038.txt</a> </p>
+		<p><a href="?action=update_data&filename=039.txt">Get data for 039.txt</a> 
+	<a href="?action=generate_images&filename=039.txt">Generate images for 039.txt</a> </p>
+		<p><a href="?action=update_data&filename=040.txt">Get data for 040.txt</a> 
+	<a href="?action=generate_images&filename=040.txt">Generate images for 040.txt</a> </p>
+		<p><a href="?action=update_data&filename=041.txt">Get data for 041.txt</a> 
+	<a href="?action=generate_images&filename=041.txt">Generate images for 041.txt</a> </p>
+		<p><a href="?action=update_data&filename=042.txt">Get data for 042.txt</a> 
+	<a href="?action=generate_images&filename=042.txt">Generate images for 042.txt</a> </p>
+		<p><a href="?action=update_data&filename=043.txt">Get data for 043.txt</a> 
+	<a href="?action=generate_images&filename=043.txt">Generate images for 043.txt</a> </p>
+		<p><a href="?action=update_data&filename=044.txt">Get data for 044.txt</a> 
+	<a href="?action=generate_images&filename=044.txt">Generate images for 044.txt</a> </p>
+		<p><a href="?action=update_data&filename=045.txt">Get data for 045.txt</a> 
+	<a href="?action=generate_images&filename=045.txt">Generate images for 045.txt</a> </p>
+		<p><a href="?action=update_data&filename=046.txt">Get data for 046.txt</a> 
+	<a href="?action=generate_images&filename=046.txt">Generate images for 046.txt</a> </p>
+		<p><a href="?action=update_data&filename=047.txt">Get data for 047.txt</a> 
+	<a href="?action=generate_images&filename=047.txt">Generate images for 047.txt</a> </p>
+		<p><a href="?action=update_data&filename=048.txt">Get data for 048.txt</a> 
+	<a href="?action=generate_images&filename=048.txt">Generate images for 048.txt</a> </p>
+		<p><a href="?action=update_data&filename=049.txt">Get data for 049.txt</a> 
+	<a href="?action=generate_images&filename=049.txt">Generate images for 049.txt</a> </p>
+		<p><a href="?action=update_data&filename=050.txt">Get data for 050.txt</a> 
+	<a href="?action=generate_images&filename=050.txt">Generate images for 050.txt</a> </p>
+		<p><a href="?action=update_data&filename=051.txt">Get data for 051.txt</a> 
+	<a href="?action=generate_images&filename=051.txt">Generate images for 051.txt</a> </p>
+		<p><a href="?action=update_data&filename=052.txt">Get data for 052.txt</a> 
+	<a href="?action=generate_images&filename=052.txt">Generate images for 052.txt</a> </p>
+		<p><a href="?action=update_data&filename=053.txt">Get data for 053.txt</a> 
+	<a href="?action=generate_images&filename=053.txt">Generate images for 053.txt</a> </p>
+		<p><a href="?action=update_data&filename=054.txt">Get data for 054.txt</a> 
+	<a href="?action=generate_images&filename=054.txt">Generate images for 054.txt</a> </p>
+		<p><a href="?action=update_data&filename=055.txt">Get data for 055.txt</a> 
+	<a href="?action=generate_images&filename=055.txt">Generate images for 055.txt</a> </p>
+		<p><a href="?action=update_data&filename=056.txt">Get data for 056.txt</a> 
+	<a href="?action=generate_images&filename=056.txt">Generate images for 056.txt</a> </p>
+		<p><a href="?action=update_data&filename=057.txt">Get data for 057.txt</a> 
+	<a href="?action=generate_images&filename=057.txt">Generate images for 057.txt</a> </p>
+		<p><a href="?action=update_data&filename=058.txt">Get data for 058.txt</a> 
+	<a href="?action=generate_images&filename=058.txt">Generate images for 058.txt</a> </p>
+		<p><a href="?action=update_data&filename=059.txt">Get data for 059.txt</a> 
+	<a href="?action=generate_images&filename=059.txt">Generate images for 059.txt</a> </p>
+		<p><a href="?action=update_data&filename=060.txt">Get data for 060.txt</a> 
+	<a href="?action=generate_images&filename=060.txt">Generate images for 060.txt</a> </p>
+		<p><a href="?action=update_data&filename=061.txt">Get data for 061.txt</a> 
+	<a href="?action=generate_images&filename=061.txt">Generate images for 061.txt</a> </p>
+		<p><a href="?action=update_data&filename=062.txt">Get data for 062.txt</a> 
+	<a href="?action=generate_images&filename=062.txt">Generate images for 062.txt</a> </p>
+		<p><a href="?action=update_data&filename=063.txt">Get data for 063.txt</a> 
+	<a href="?action=generate_images&filename=063.txt">Generate images for 063.txt</a> </p>
+		<p><a href="?action=update_data&filename=064.txt">Get data for 064.txt</a> 
+	<a href="?action=generate_images&filename=064.txt">Generate images for 064.txt</a> </p>
+		<p><a href="?action=update_data&filename=065.txt">Get data for 065.txt</a> 
+	<a href="?action=generate_images&filename=065.txt">Generate images for 065.txt</a> </p>
+		<p><a href="?action=update_data&filename=066.txt">Get data for 066.txt</a> 
+	<a href="?action=generate_images&filename=066.txt">Generate images for 066.txt</a> </p>
+		<p><a href="?action=update_data&filename=067.txt">Get data for 067.txt</a> 
+	<a href="?action=generate_images&filename=067.txt">Generate images for 067.txt</a> </p>
+		<p><a href="?action=update_data&filename=068.txt">Get data for 068.txt</a> 
+	<a href="?action=generate_images&filename=068.txt">Generate images for 068.txt</a> </p>
+		<p><a href="?action=update_data&filename=069.txt">Get data for 069.txt</a> 
+	<a href="?action=generate_images&filename=069.txt">Generate images for 069.txt</a> </p>
+		<p><a href="?action=update_data&filename=070.txt">Get data for 070.txt</a> 
+	<a href="?action=generate_images&filename=070.txt">Generate images for 070.txt</a> </p>
+		<p><a href="?action=update_data&filename=071.txt">Get data for 071.txt</a> 
+	<a href="?action=generate_images&filename=071.txt">Generate images for 071.txt</a> </p>
+		<p><a href="?action=update_data&filename=072.txt">Get data for 072.txt</a> 
+	<a href="?action=generate_images&filename=072.txt">Generate images for 072.txt</a> </p>
+		<p><a href="?action=update_data&filename=073.txt">Get data for 073.txt</a> 
+	<a href="?action=generate_images&filename=073.txt">Generate images for 073.txt</a> </p>
+		<p><a href="?action=update_data&filename=074.txt">Get data for 074.txt</a> 
+	<a href="?action=generate_images&filename=074.txt">Generate images for 074.txt</a> </p>
+		<p><a href="?action=update_data&filename=075.txt">Get data for 075.txt</a> 
+	<a href="?action=generate_images&filename=075.txt">Generate images for 075.txt</a> </p>
+		<p><a href="?action=update_data&filename=076.txt">Get data for 076.txt</a> 
+	<a href="?action=generate_images&filename=076.txt">Generate images for 076.txt</a> </p>
+		<p><a href="?action=update_data&filename=077.txt">Get data for 077.txt</a> 
+	<a href="?action=generate_images&filename=077.txt">Generate images for 077.txt</a> </p>
+		<p><a href="?action=update_data&filename=078.txt">Get data for 078.txt</a> 
+	<a href="?action=generate_images&filename=078.txt">Generate images for 078.txt</a> </p>
+		<p><a href="?action=update_data&filename=079.txt">Get data for 079.txt</a> 
+	<a href="?action=generate_images&filename=079.txt">Generate images for 079.txt</a> </p>
+		<p><a href="?action=update_data&filename=080.txt">Get data for 080.txt</a> 
+	<a href="?action=generate_images&filename=080.txt">Generate images for 080.txt</a> </p>
+		<p><a href="?action=update_data&filename=081.txt">Get data for 081.txt</a> 
+	<a href="?action=generate_images&filename=081.txt">Generate images for 081.txt</a> </p>
+		<p><a href="?action=update_data&filename=082.txt">Get data for 082.txt</a> 
+	<a href="?action=generate_images&filename=082.txt">Generate images for 082.txt</a> </p>
+		<p><a href="?action=update_data&filename=083.txt">Get data for 083.txt</a> 
+	<a href="?action=generate_images&filename=083.txt">Generate images for 083.txt</a> </p>
+		<p><a href="?action=update_data&filename=084.txt">Get data for 084.txt</a> 
+	<a href="?action=generate_images&filename=084.txt">Generate images for 084.txt</a> </p>
+		<p><a href="?action=update_data&filename=085.txt">Get data for 085.txt</a> 
+	<a href="?action=generate_images&filename=085.txt">Generate images for 085.txt</a> </p>
+		<p><a href="?action=update_data&filename=086.txt">Get data for 086.txt</a> 
+	<a href="?action=generate_images&filename=086.txt">Generate images for 086.txt</a> </p>
+		<p><a href="?action=update_data&filename=087.txt">Get data for 087.txt</a> 
+	<a href="?action=generate_images&filename=087.txt">Generate images for 087.txt</a> </p>
+		<p><a href="?action=update_data&filename=088.txt">Get data for 088.txt</a> 
+	<a href="?action=generate_images&filename=088.txt">Generate images for 088.txt</a> </p>
+		<p><a href="?action=update_data&filename=089.txt">Get data for 089.txt</a> 
+	<a href="?action=generate_images&filename=089.txt">Generate images for 089.txt</a> </p>
+		<p><a href="?action=update_data&filename=090.txt">Get data for 090.txt</a> 
+	<a href="?action=generate_images&filename=090.txt">Generate images for 090.txt</a> </p>
+		<p><a href="?action=update_data&filename=091.txt">Get data for 091.txt</a> 
+	<a href="?action=generate_images&filename=091.txt">Generate images for 091.txt</a> </p>
+		<p><a href="?action=update_data&filename=092.txt">Get data for 092.txt</a> 
+	<a href="?action=generate_images&filename=092.txt">Generate images for 092.txt</a> </p>
+		<p><a href="?action=update_data&filename=093.txt">Get data for 093.txt</a> 
+	<a href="?action=generate_images&filename=093.txt">Generate images for 093.txt</a> </p>
+		<p><a href="?action=update_data&filename=094.txt">Get data for 094.txt</a> 
+	<a href="?action=generate_images&filename=094.txt">Generate images for 094.txt</a> </p>
+		<p><a href="?action=update_data&filename=095.txt">Get data for 095.txt</a> 
+	<a href="?action=generate_images&filename=095.txt">Generate images for 095.txt</a> </p>
+		<p><a href="?action=update_data&filename=096.txt">Get data for 096.txt</a> 
+	<a href="?action=generate_images&filename=096.txt">Generate images for 096.txt</a> </p>
+		<p><a href="?action=update_data&filename=097.txt">Get data for 097.txt</a> 
+	<a href="?action=generate_images&filename=097.txt">Generate images for 097.txt</a> </p>
+		<p><a href="?action=update_data&filename=098.txt">Get data for 098.txt</a> 
+	<a href="?action=generate_images&filename=098.txt">Generate images for 098.txt</a> </p>
+		<p><a href="?action=update_data&filename=099.txt">Get data for 099.txt</a> 
+	<a href="?action=generate_images&filename=099.txt">Generate images for 099.txt</a> </p>
+		<p><a href="?action=update_data&filename=100.txt">Get data for 100.txt</a> 
+	<a href="?action=generate_images&filename=100.txt">Generate images for 100.txt</a> </p>
+		<p><a href="?action=update_data&filename=101.txt">Get data for 101.txt</a> 
+	<a href="?action=generate_images&filename=101.txt">Generate images for 101.txt</a> </p>
+		<p><a href="?action=update_data&filename=102.txt">Get data for 102.txt</a> 
+	<a href="?action=generate_images&filename=102.txt">Generate images for 102.txt</a> </p>
+		<p><a href="?action=update_data&filename=103.txt">Get data for 103.txt</a> 
+	<a href="?action=generate_images&filename=103.txt">Generate images for 103.txt</a> </p>
+		<p><a href="?action=update_data&filename=104.txt">Get data for 104.txt</a> 
+	<a href="?action=generate_images&filename=104.txt">Generate images for 104.txt</a> </p>
+		<p><a href="?action=update_data&filename=105.txt">Get data for 105.txt</a> 
+	<a href="?action=generate_images&filename=105.txt">Generate images for 105.txt</a> </p>
+		<p><a href="?action=update_data&filename=106.txt">Get data for 106.txt</a> 
+	<a href="?action=generate_images&filename=106.txt">Generate images for 106.txt</a> </p>
+		<p><a href="?action=update_data&filename=107.txt">Get data for 107.txt</a> 
+	<a href="?action=generate_images&filename=107.txt">Generate images for 107.txt</a> </p>
+		<p><a href="?action=update_data&filename=108.txt">Get data for 108.txt</a> 
+	<a href="?action=generate_images&filename=108.txt">Generate images for 108.txt</a> </p>
+		<p><a href="?action=update_data&filename=109.txt">Get data for 109.txt</a> 
+	<a href="?action=generate_images&filename=109.txt">Generate images for 109.txt</a> </p>
+		<p><a href="?action=update_data&filename=110.txt">Get data for 110.txt</a> 
+	<a href="?action=generate_images&filename=110.txt">Generate images for 110.txt</a> </p>
+		<p><a href="?action=update_data&filename=111.txt">Get data for 111.txt</a> 
+	<a href="?action=generate_images&filename=111.txt">Generate images for 111.txt</a> </p>
+		<p><a href="?action=update_data&filename=112.txt">Get data for 112.txt</a> 
+	<a href="?action=generate_images&filename=112.txt">Generate images for 112.txt</a> </p>
+		<p><a href="?action=update_data&filename=113.txt">Get data for 113.txt</a> 
+	<a href="?action=generate_images&filename=113.txt">Generate images for 113.txt</a> </p>
+		<p><a href="?action=update_data&filename=114.txt">Get data for 114.txt</a> 
+	<a href="?action=generate_images&filename=114.txt">Generate images for 114.txt</a> </p>
+	
