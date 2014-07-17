@@ -1,0 +1,26 @@
+wordofquran.com
+
+1. user logs in with Facebook
+2. set frequencey of words in a day (2 words a day) and optional timings (conside timezne)
+3. start posting word to facebook
+
+
+Extended options
+
+- skip repeating words
+- skip very common words for example Allah
+
+ask for donations to keep it runing and adding things
+
+System will post each image to user's wall.
+
+
+
+- quizes
+- compeitions
+
+- overall performance
+- level acheived
+
+
+-- added another line to test 
